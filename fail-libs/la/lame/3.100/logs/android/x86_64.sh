@@ -1,0 +1,67 @@
+CC="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+CXX="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang++"
+AR="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
+AS="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+RANLIB="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib"
+STRIP="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip"
+NM="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-nm"
+LD="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld"
+HOST="x86_64-linux-android"
+CFLAGS="-fPIC -O2 -Wall"
+CXXFLAGS="-fPIC -O2 -Wall"
+cd /Users/jinglongcai/code/MobiPkg/compile/example/http/lame/source/lame/lame-3.100
+make clean
+CC="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+CXX="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang++"
+AR="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
+AS="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+RANLIB="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib"
+STRIP="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip"
+NM="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-nm"
+LD="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld"
+HOST="x86_64-linux-android"
+CFLAGS="-fPIC -O2 -Wall"
+CXXFLAGS="-fPIC -O2 -Wall"
+cd /Users/jinglongcai/code/MobiPkg/compile/example/http/lame/source/lame/lame-3.100
+./configure --prefix=/Users/jinglongcai/code/MobiPkg/compile/example/http/lame/install/android/x86_64 --exec-prefix /Users/jinglongcai/code/MobiPkg/compile/example/http/lame/install/android/x86_64 --host x86_64-linux-android 
+CC="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+CXX="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang++"
+AR="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
+AS="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+RANLIB="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib"
+STRIP="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip"
+NM="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-nm"
+LD="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld"
+HOST="x86_64-linux-android"
+CFLAGS="-fPIC -O2 -Wall"
+CXXFLAGS="-fPIC -O2 -Wall"
+cd /Users/jinglongcai/code/MobiPkg/compile/example/http/lame/source/lame/lame-3.100
+make clean
+CC="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+CXX="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang++"
+AR="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
+AS="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+RANLIB="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib"
+STRIP="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip"
+NM="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-nm"
+LD="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld"
+HOST="x86_64-linux-android"
+CFLAGS="-fPIC -O2 -Wall"
+CXXFLAGS="-fPIC -O2 -Wall"
+cd /Users/jinglongcai/code/MobiPkg/compile/example/http/lame/source/lame/lame-3.100
+make -j6
+CC="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+CXX="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang++"
+AR="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar"
+AS="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/x86_64-linux-android21-clang"
+RANLIB="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib"
+STRIP="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip"
+NM="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-nm"
+LD="/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld"
+HOST="x86_64-linux-android"
+CFLAGS="-fPIC -O2 -Wall"
+CXXFLAGS="-fPIC -O2 -Wall"
+cd /Users/jinglongcai/code/MobiPkg/compile/example/http/lame/source/lame/lame-3.100
+make install
+cd /Users/jinglongcai/code/MobiPkg/compile/example/http/lame
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip /Users/jinglongcai/code/MobiPkg/compile/example/http/lame/install/android/x86_64/lib/libmp3lame.so
