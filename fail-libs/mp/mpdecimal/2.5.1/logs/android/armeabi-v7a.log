@@ -1,0 +1,799 @@
+$ wget https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz -O /var/folders/4c/nytkfshn7f3538mdwtfh1cw80000gn/T/download/1681898759544
+
+--2023-04-19 18:05:59--  https://www.bytereef.org/software/mpdecimal/releases/mpdecimal-2.5.1.tar.gz
+
+正在连接 127.0.0.1:7890... 
+已连接。
+
+已发出 Proxy 请求，正在等待回应... 
+200 OK
+长度：2584021 (2.5M) [application/gzip]
+正在保存至: “/var/folders/4c/nytkfshn7f3538mdwtfh1cw80000gn/T/download/1681898759544”
+
+
+     0K ......
+.... .....
+..... .......... .
+......... .......
+...  1%  335K 7s
+    50K .......... ...
+....... .........
+. .......... .....
+.....  3%  992K 5s
+   100K .......... .
+......... .......
+... .......... ...
+.......  5% 1.18M 4s
+   150K .........
+. .......... .....
+..... .......... .
+.........  7% 1.89M 3s
+   200K .......
+... .......... ...
+....... .........
+. ..........  9% 2.23M 3s
+   250K .....
+..... .......... .
+......... .......
+... .......... 11% 2.30M 2s
+   300K ...
+....... .........
+. .......... .....
+..... .......... 13% 2.99M 2s
+   350K .
+......... .......
+... .......... ...
+....... ..
+........ 15% 2.98M 2s
+   400K ........
+.. .......... ....
+...... ..........
+ .......... 17% 4.15M 2s
+   450K ......
+.... .......... ..
+........ ........
+.. .......... 19% 4.16M 1s
+   500K ....
+...... ..........
+ .......... ......
+.... .......... 21% 4.99M 1s
+   550K ..
+........ ........
+.. .......... ....
+...... .......... 23% 5.22M 1s
+
+   600K .......... ......
+.... .......... ..
+........ ........
+.. 25% 4.44M 1s
+   650K .......... ....
+...... ..........
+ .......... ......
+.... 27% 5.86M 1s
+   700K .......... ..
+........ ........
+.. .......... ....
+...... 29% 6.67M 1s
+   750K ..........
+ .......... ......
+.... .......... ..
+........ 31% 7.07M 1s
+   800K ........
+.. .......... ....
+...... ..........
+ .......... 33% 7.17M 1s
+   850K ......
+.... .......... ..
+........ ........
+.. .......... 35% 7.32M 1s
+   900K ....
+...... ..........
+ .......... ......
+.... .......... 37% 8.92M 1s
+   950K ..
+........ ...
+....... .........
+. .......... .....
+..... 39% 7.62M 1s
+  1000K .......... .
+......... .......
+... .......... ...
+....... 41% 8.30M 1s
+  1050K .........
+. .......... .....
+..... .......... .
+......... 43% 11.1M 1s
+  1100K .......
+... .......... ...
+....... .........
+. .......... 45% 8.91M 1s
+  1150K .....
+..... .......... .
+......... .......
+... .......... 47% 12.0M 1s
+  1200K ...
+....... ...
+....... .........
+. .......... .....
+..... 49% 8.77M 0s
+  1250K .......... .
+......... .......
+... .......... ...
+....... 51% 9.66M 0s
+  1300K .........
+. .......... .....
+..... .......... .
+......... 53% 12.1M 0s
+  1350K .......
+... .......... ...
+....... .........
+. .......... 55% 13.7M 0s
+  1400K .....
+..... .......... .
+......... .......
+... .......... 57% 11.7M 0s
+  1450K ...
+....... .........
+. .......... .....
+..... .......... 59% 10.9M 0s
+  1500K .
+......... .......
+... .......... ...
+....... .........
+. 61% 9.00M 0s
+  1550K .......... .....
+..... .......... .
+......... .......
+... 63% 10.7M 0s
+  1600K .......... ...
+....... .........
+. .......... .....
+..... 65% 13.3M 0s
+  1650K .......... .
+......... .......
+... .......... ...
+....... 67% 10.4M 0s
+  1700K .........
+. .......... .....
+..... .......... .
+......... 69% 11.0M 0s
+  1750K .......
+... .......... ...
+....... .........
+. .......... 71% 14.9M 0s
+  1800K .....
+..... .......... .
+......... .......
+... .......... 73% 10.0M 0s
+  1850K ...
+....... .........
+. .......... .....
+..... .......... 75% 13.3M 0s
+  1900K .
+......... .......
+... .......... ...
+....... .........
+. 77% 8.83M 0s
+  1950K .......... .....
+..... .......... .
+......... .......
+... 79% 10.4M 0s
+  2000K .......... ...
+....... .........
+. ....
+...... .......... 81% 21.4M 0s
+
+  2050K .......... ......
+.... .......... ..
+........ ........
+.. 83% 8.64M 0s
+  2100K .......... ....
+...... ..........
+ .......... ......
+.... 85%  381K 0s
+  2150K .......... ..
+........ .......... .......... .......... 87% 39.3M 0s
+  2200K ..
+........
+ .......... ......
+.... .......... .......... 89% 21.2M 0s
+  2250K ........
+.. .......... ....
+...... ....
+...... .......... 91% 21.1M 0s
+  2300K .......... ......
+.... .......... .......... .......... 93% 40.0M 0s
+  2350K .......... ....
+...... ..........
+ .......... ......
+.... 95% 15.4M 0s
+  2400K .......... ..........
+ .......... .......... ....
+...... 97% 40.3M 0s
+  2450K ..........
+ .......... .......... .......... ..
+........ 99%  737K 0s
+  2500K .......... .......... ...                             100%  225M=0.8s
+
+
+2023-04-19 18:06:00 (3.27 MB/s) - 已保存 “/var/folders/4c/nytkfshn7f3538mdwtfh1cw80000gn/T/download/1681898759544” [2584021/2584021])
+
+
+$ tar -zxvf /var/folders/4c/nytkfshn7f3538mdwtfh1cw80000gn/T/download/1681898759544 -C /Users/jinglongcai/code/MobiPkg/compile/logs/mpdecimal/source/mpdecimal
+
+x mpdecimal-2.5.1/
+x mpdecimal-2.5.1/vcbuild/
+
+x mpdecimal-2.5.1/vcbuild/vcdistclean.bat
+x mpdecimal-2.5.1/vcbuild/vcclean.bat
+
+x mpdecimal-2.5.1/vcbuild/vcbuild64.bat
+
+x mpdecimal-2.5.1/vcbuild/vcbuild32.bat
+
+x mpdecimal-2.5.1/vcbuild/runshort_alloc.bat
+
+x mpdecimal-2.5.1/vcbuild/runshort.bat
+x mpdecimal-2.5.1/vcbuild/pgobuild64.bat
+
+x mpdecimal-2.5.1/vcbuild/pgobuild32.bat
+
+x mpdecimal-2.5.1/vcbuild/README.txt
+
+x mpdecimal-2.5.1/tools/
+x mpdecimal-2.5.1/tools/todos.sh
+
+x mpdecimal-2.5.1/tools/replace.sh
+
+x mpdecimal-2.5.1/tests/
+x mpdecimal-2.5.1/tests/testdata_dist/
+x mpdecimal-2.5.1/tests/testdata_dist/testruntest.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/shiftlr.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/powmod_eq.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/powmod.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/maxprec.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/largeint.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/invroot.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/getint.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/format.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/fma_eq.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/extra.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/divmod_eq.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/divmod.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/cov.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/binop_eq.decTest
+
+x mpdecimal-2.5.1/tests/testdata_dist/baseconv.decTest
+
+x mpdecimal-2.5.1/tests/vctest.h
+
+x mpdecimal-2.5.1/tests/test.h
+
+x mpdecimal-2.5.1/tests/test.c
+
+x mpdecimal-2.5.1/tests/runtest.c
+
+
+x mpdecimal-2.5.1/tests/runshort_alloc.sh
+
+x mpdecimal-2.5.1/tests/runshort.sh
+
+x mpdecimal-2.5.1/tests/official.decTest
+
+x mpdecimal-2.5.1/tests/gettests.sh
+x mpdecimal-2.5.1/tests/gettests.bat
+
+x mpdecimal-2.5.1/tests/additional.decTest
+
+x mpdecimal-2.5.1/tests/README.txt
+
+x mpdecimal-2.5.1/tests/Makefile.vc
+
+x mpdecimal-2.5.1/tests/Makefile.in
+x mpdecimal-2.5.1/tests++/
+
+x mpdecimal-2.5.1/tests++/vctest.hh
+
+x mpdecimal-2.5.1/tests++/test.hh
+
+x mpdecimal-2.5.1/tests++/test.cc
+x mpdecimal-2.5.1/tests++/runtest.cc
+
+x mpdecimal-2.5.1/tests++/runshort_alloc.sh
+
+x mpdecimal-2.5.1/tests++/runshort.sh
+x mpdecimal-2.5.1/tests++/official.topTest
+
+x mpdecimal-2.5.1/tests++/gettests.sh
+
+x mpdecimal-2.5.1/tests++/gettests.bat
+
+x mpdecimal-2.5.1/tests++/compile_tests/
+x mpdecimal-2.5.1/tests++/compile_tests/check_conversions.py
+x mpdecimal-2.5.1/tests++/apitest.cc
+
+x mpdecimal-2.5.1/tests++/additional.topTest
+
+x mpdecimal-2.5.1/tests++/README.txt
+
+x mpdecimal-2.5.1/tests++/Makefile.vc
+x mpdecimal-2.5.1/tests++/Makefile.in
+
+x mpdecimal-2.5.1/libmpdec/
+x mpdecimal-2.5.1/libmpdec/literature/
+x mpdecimal-2.5.1/libmpdec/literature/umodarith.lisp
+
+x mpdecimal-2.5.1/libmpdec/literature/six-step.txt
+x mpdecimal-2.5.1/libmpdec/literature/mulmod-ppro.txt
+x mpdecimal-2.5.1/libmpdec/literature/mulmod-64.txt
+
+x mpdecimal-2.5.1/libmpdec/literature/matrix-transform.txt
+x mpdecimal-2.5.1/libmpdec/literature/fnt.py
+x mpdecimal-2.5.1/libmpdec/literature/bignum.txt
+x mpdecimal-2.5.1/libmpdec/literature/REFERENCES.txt
+x mpdecimal-2.5.1/libmpdec/examples/
+x mpdecimal-2.5.1/libmpdec/examples/sqrt.c
+
+x mpdecimal-2.5.1/libmpdec/examples/shift.c
+x mpdecimal-2.5.1/libmpdec/examples/powmod.c
+x mpdecimal-2.5.1/libmpdec/examples/pow.c
+x mpdecimal-2.5.1/libmpdec/examples/multiply.c
+x mpdecimal-2.5.1/libmpdec/examples/divmod.c
+x mpdecimal-2.5.1/libmpdec/examples/div.c
+x mpdecimal-2.5.1/libmpdec/examples/compare.c
+
+x mpdecimal-2.5.1/libmpdec/examples/README.txt
+x mpdecimal-2.5.1/libmpdec/vcdiv64.asm
+
+x mpdecimal-2.5.1/libmpdec/umodarith.h
+x mpdecimal-2.5.1/libmpdec/typearith.h
+x mpdecimal-2.5.1/libmpdec/transpose.h
+x mpdecimal-2.5.1/libmpdec/transpose.c
+
+x mpdecimal-2.5.1/libmpdec/sixstep.h
+x mpdecimal-2.5.1/libmpdec/sixstep.c
+x mpdecimal-2.5.1/libmpdec/numbertheory.h
+x mpdecimal-2.5.1/libmpdec/numbertheory.c
+x mpdecimal-2.5.1/libmpdec/mpsignal.c
+x mpdecimal-2.5.1/libmpdec/mpdecimal64vc.h
+
+x mpdecimal-2.5.1/libmpdec/mpdecimal32vc.h
+x mpdecimal-2.5.1/libmpdec/mpdecimal.h.in
+x mpdecimal-2.5.1/libmpdec/mpdecimal.c
+
+x mpdecimal-2.5.1/libmpdec/mpalloc.h
+
+x mpdecimal-2.5.1/libmpdec/mpalloc.c
+x mpdecimal-2.5.1/libmpdec/io.h
+
+x mpdecimal-2.5.1/libmpdec/io.c
+
+x mpdecimal-2.5.1/libmpdec/fourstep.h
+x mpdecimal-2.5.1/libmpdec/fourstep.c
+
+x mpdecimal-2.5.1/libmpdec/fnt.h
+x mpdecimal-2.5.1/libmpdec/fnt.c
+x mpdecimal-2.5.1/libmpdec/difradix2.h
+
+x mpdecimal-2.5.1/libmpdec/difradix2.c
+x mpdecimal-2.5.1/libmpdec/crt.h
+x mpdecimal-2.5.1/libmpdec/crt.c
+
+x mpdecimal-2.5.1/libmpdec/convolute.h
+x mpdecimal-2.5.1/libmpdec/convolute.c
+x mpdecimal-2.5.1/libmpdec/context.c
+
+x mpdecimal-2.5.1/libmpdec/constants.h
+
+x mpdecimal-2.5.1/libmpdec/constants.c
+x mpdecimal-2.5.1/libmpdec/bits.h
+
+x mpdecimal-2.5.1/libmpdec/bench_full.c
+
+x mpdecimal-2.5.1/libmpdec/bench.c
+x mpdecimal-2.5.1/libmpdec/basearith.h
+x mpdecimal-2.5.1/libmpdec/basearith.c
+
+x mpdecimal-2.5.1/libmpdec/README.txt
+x mpdecimal-2.5.1/libmpdec/Makefile.vc
+
+x mpdecimal-2.5.1/libmpdec/Makefile.in
+x mpdecimal-2.5.1/libmpdec/.objs/
+
+x mpdecimal-2.5.1/libmpdec/.objs/symbols64.exp
+
+x mpdecimal-2.5.1/libmpdec/.objs/symbols32.exp
+x mpdecimal-2.5.1/libmpdec/.objs/libmpdec.imp
+
+x mpdecimal-2.5.1/libmpdec/.objs/README.txt
+
+x mpdecimal-2.5.1/libmpdec++/
+x mpdecimal-2.5.1/libmpdec++/examples/
+x mpdecimal-2.5.1/libmpdec++/examples/pi.cc
+
+x mpdecimal-2.5.1/libmpdec++/examples/factorial.cc
+
+x mpdecimal-2.5.1/libmpdec++/decimal.hh
+x mpdecimal-2.5.1/libmpdec++/decimal.cc
+
+x mpdecimal-2.5.1/libmpdec++/bench_full.cc
+
+x mpdecimal-2.5.1/libmpdec++/bench.cc
+
+x mpdecimal-2.5.1/libmpdec++/Makefile.vc
+x mpdecimal-2.5.1/libmpdec++/Makefile.in
+
+x mpdecimal-2.5.1/libmpdec++/.objs/
+
+x mpdecimal-2.5.1/libmpdec++/.objs/README.txt
+
+x mpdecimal-2.5.1/install-sh
+
+x mpdecimal-2.5.1/doc/
+x mpdecimal-2.5.1/doc/libmpdec/
+
+x mpdecimal-2.5.1/doc/libmpdec/_static/
+
+x mpdecimal-2.5.1/doc/libmpdec/_static/underscore.js
+
+x mpdecimal-2.5.1/doc/libmpdec/_static/underscore-1.3.1.js
+
+x mpdecimal-2.5.1/doc/libmpdec/_static/sidebar.js
+x mpdecimal-2.5.1/doc/libmpdec/_static/searchtools.js
+x mpdecimal-2.5.1/doc/libmpdec/_static/pygments.css
+
+x mpdecimal-2.5.1/doc/libmpdec/_static/plus.png
+x mpdecimal-2.5.1/doc/libmpdec/_static/mpdecimal-doc.css
+
+x mpdecimal-2.5.1/doc/libmpdec/_static/minus.png
+x mpdecimal-2.5.1/doc/libmpdec/_static/language_data.js
+x mpdecimal-2.5.1/doc/libmpdec/_static/jquery.js
+x mpdecimal-2.5.1/doc/libmpdec/_static/jquery-3.4.1.js
+
+x mpdecimal-2.5.1/doc/libmpdec/_static/file.png
+x mpdecimal-2.5.1/doc/libmpdec/_static/documentation_options.js
+x mpdecimal-2.5.1/doc/libmpdec/_static/doctools.js
+x mpdecimal-2.5.1/doc/libmpdec/_static/default.css
+x mpdecimal-2.5.1/doc/libmpdec/_static/classic.css
+x mpdecimal-2.5.1/doc/libmpdec/_static/basic.css
+x mpdecimal-2.5.1/doc/libmpdec/various.html
+
+x mpdecimal-2.5.1/doc/libmpdec/searchindex.js
+x mpdecimal-2.5.1/doc/libmpdec/search.html
+x mpdecimal-2.5.1/doc/libmpdec/objects.inv
+x mpdecimal-2.5.1/doc/libmpdec/memory.html
+x mpdecimal-2.5.1/doc/libmpdec/index.html
+x mpdecimal-2.5.1/doc/libmpdec/functions.html
+x mpdecimal-2.5.1/doc/libmpdec/decimals.html
+x mpdecimal-2.5.1/doc/libmpdec/context.html
+x mpdecimal-2.5.1/doc/libmpdec/attributes.html
+x mpdecimal-2.5.1/doc/libmpdec/assign-convert.html
+x mpdecimal-2.5.1/doc/libmpdec/arithmetic.html
+x mpdecimal-2.5.1/doc/libmpdec/README.txt
+x mpdecimal-2.5.1/doc/libmpdec++/
+x mpdecimal-2.5.1/doc/libmpdec++/_static/
+x mpdecimal-2.5.1/doc/libmpdec++/_static/underscore.js
+x mpdecimal-2.5.1/doc/libmpdec++/_static/underscore-1.3.1.js
+x mpdecimal-2.5.1/doc/libmpdec++/_static/sidebar.js
+
+x mpdecimal-2.5.1/doc/libmpdec++/_static/searchtools.js
+x mpdecimal-2.5.1/doc/libmpdec++/_static/pygments.css
+x mpdecimal-2.5.1/doc/libmpdec++/_static/plus.png
+x mpdecimal-2.5.1/doc/libmpdec++/_static/mpdecimal-doc.css
+x mpdecimal-2.5.1/doc/libmpdec++/_static/minus.png
+x mpdecimal-2.5.1/doc/libmpdec++/_static/language_data.js
+x mpdecimal-2.5.1/doc/libmpdec++/_static/jquery.js
+
+x mpdecimal-2.5.1/doc/libmpdec++/_static/jquery-3.4.1.js
+x mpdecimal-2.5.1/doc/libmpdec++/_static/file.png
+x mpdecimal-2.5.1/doc/libmpdec++/_static/documentation_options.js
+x mpdecimal-2.5.1/doc/libmpdec++/_static/doctools.js
+x mpdecimal-2.5.1/doc/libmpdec++/_static/default.css
+x mpdecimal-2.5.1/doc/libmpdec++/_static/classic.css
+x mpdecimal-2.5.1/doc/libmpdec++/_static/basic.css
+x mpdecimal-2.5.1/doc/libmpdec++/search.html
+x mpdecimal-2.5.1/doc/libmpdec++/index.html
+x mpdecimal-2.5.1/doc/libmpdec++/searchindex.js
+x mpdecimal-2.5.1/doc/libmpdec++/decimal.html
+
+x mpdecimal-2.5.1/doc/libmpdec++/objects.inv
+x mpdecimal-2.5.1/doc/libmpdec++/constants.html
+x mpdecimal-2.5.1/doc/libmpdec++/exceptions.html
+x mpdecimal-2.5.1/doc/libmpdec++/README.txt
+x mpdecimal-2.5.1/doc/libmpdec++/context.html
+x mpdecimal-2.5.1/doc/LICENSE.txt
+x mpdecimal-2.5.1/configure.ac
+x mpdecimal-2.5.1/configure
+
+x mpdecimal-2.5.1/config.sub
+x mpdecimal-2.5.1/config.h.in
+x mpdecimal-2.5.1/config.guess
+x mpdecimal-2.5.1/README.txt
+x mpdecimal-2.5.1/LICENSE.txt
+x mpdecimal-2.5.1/INSTALL.txt
+x mpdecimal-2.5.1/Makefile.in
+x mpdecimal-2.5.1/CHANGELOG.txt
+
+$ ./configure --prefix=/Users/jinglongcai/code/MobiPkg/compile/logs/mpdecimal/install/android/armeabi-v7a --exec-prefix /Users/jinglongcai/code/MobiPkg/compile/logs/mpdecimal/install/android/armeabi-v7a --host arm-linux-androideabi
+
+checking system as reported by uname -s... 
+Darwin
+
+checking build system type... 
+x86_64-apple-darwin21.6.0
+
+checking host system type... 
+arm-unknown-linux-androideabi
+
+checking for --enable-shared... 
+yes
+
+checking for --enable-cxx... 
+yes
+checking for --enable-profile... 
+no
+
+checking for arm-linux-androideabi-gcc... /Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang
+
+checking whether the C compiler works... 
+yes
+checking for C compiler default output file name... 
+a.out
+
+checking for suffix of executables... 
+
+
+checking whether we are cross compiling... 
+yes
+
+checking for suffix of object files... 
+o
+checking whether we are using the GNU C compiler... 
+yes
+checking whether /Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang accepts -g... 
+yes
+
+checking for /Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang option to accept ISO C89... 
+none needed
+
+checking whether we are using the GNU C++ compiler... 
+yes
+checking whether /Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang++ accepts -g... 
+yes
+
+checking for arm-linux-androideabi-ar... /Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar
+
+checking for arm-linux-androideabi-ranlib... /Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib
+
+checking how to run the C preprocessor... 
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -E
+
+checking for grep that handles long lines and -e... 
+/usr/bin/grep
+checking for egrep... 
+/usr/bin/grep -E
+checking for ANSI C header files... 
+yes
+
+checking for sys/types.h... 
+yes
+
+checking for sys/stat.h... 
+yes
+
+checking for stdlib.h... 
+yes
+
+checking for string.h... 
+yes
+
+checking for memory.h... 
+yes
+
+checking for strings.h... 
+yes
+
+checking for inttypes.h... 
+yes
+
+checking for stdint.h... 
+yes
+
+checking for unistd.h... 
+yes
+
+checking for inttypes.h... (cached) yes
+
+checking pthread.h usability... 
+yes
+checking pthread.h presence... 
+yes
+checking for pthread.h... 
+yes
+
+checking for stdint.h... (cached) yes
+
+checking for size_t... 
+yes
+
+checking for int32_t... 
+yes
+
+checking for int64_t... 
+yes
+
+checking for uint32_t... 
+yes
+
+checking for uint64_t... 
+yes
+
+checking for __uint128_t... 
+no
+
+checking size of size_t... 
+4
+
+checking size of __uint128_t... 
+0
+
+checking for x64 gcc inline assembler... 
+no
+checking for x87 gcc inline assembler... 
+no
+checking for -O2... 
+yes
+checking for a BSD-compatible install... 
+/usr/local/bin/ginstall -c
+
+checking for glibc _FORTIFY_SOURCE/memmove bug... 
+undefined
+
+configure: creating ./config.status
+
+config.status: creating Makefile
+
+config.status: creating libmpdec/Makefile
+
+config.status: creating tests/Makefile
+
+config.status: creating libmpdec/mpdecimal.h
+
+config.status: creating libmpdec++/Makefile
+
+config.status: creating tests++/Makefile
+
+config.status: creating config.h
+
+$ make clean
+
+cd libmpdec && if [ -f Makefile ]; then /Applications/Xcode.app/Contents/Developer/usr/bin/make clean; else exit 0; fi
+
+rm -f *.o *.so *.gch *.gcda *.gcno *.gcov *.dyn *.dpi *.lock
+
+rm -f bench bench_shared bench_full bench_full_shared pow sqrt libmpdec.a libmpdec.dylib libmpdec.3.dylib libmpdec.2.5.1.dylib 
+
+cd .objs && rm -f *.o *.so *.gch *.gcda *.gcno *.gcov *.dyn *.dpi *.lock
+
+cd libmpdec++ && if [ -f Makefile ]; then /Applications/Xcode.app/Contents/Developer/usr/bin/make clean; else exit 0; fi
+
+rm -f *.o *.so *.gch *.gcda *.gcno *.gcov *.dyn *.dpi *.lock
+
+rm -f bench bench_shared bench_full bench_full_shared factorial pi libmpdec++.a libmpdec++.dylib libmpdec++.3.dylib libmpdec++.2.5.1.dylib
+
+cd .objs && rm -f *.o *.so *.gch *.gcda *.gcno *.gcov *.dyn *.dpi *.lock
+
+cd tests && if [ -f Makefile ]; then /Applications/Xcode.app/Contents/Developer/usr/bin/make clean; else exit 0; fi
+
+rm -f *.o *.gch *.gcda *.gcno *.gcov *.dyn *.dpi *.lock
+
+rm -f runtest runtest_shared
+
+cd tests++ && if [ -f Makefile ]; then /Applications/Xcode.app/Contents/Developer/usr/bin/make clean; else exit 0; fi
+
+rm -f *.o *.gch *.gcda *.gcno *.gcov *.dyn *.dpi *.lock
+
+rm -f runtest runtest_shared apitest apitest_shared
+
+$ make -j6
+
+cd libmpdec && /Applications/Xcode.app/Contents/Developer/usr/bin/make 
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c basearith.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c context.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c constants.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c convolute.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c crt.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c mpdecimal.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c mpsignal.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c difradix2.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c fnt.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c fourstep.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c io.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c mpalloc.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c numbertheory.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c sixstep.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -c transpose.c
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c basearith.c -o .objs/basearith.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c context.c -o .objs/context.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c constants.c -o .objs/constants.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c convolute.c -o .objs/convolute.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c crt.c -o .objs/crt.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c mpdecimal.c -o .objs/mpdecimal.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c mpsignal.c -o .objs/mpsignal.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c difradix2.c -o .objs/difradix2.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c fnt.c -o .objs/fnt.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c fourstep.c -o .objs/fourstep.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c io.c -o .objs/io.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c mpalloc.c -o .objs/mpalloc.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c numbertheory.c -o .objs/numbertheory.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c sixstep.c -o .objs/sixstep.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/armv7a-linux-androideabi21-clang -Wextra -Wno-unknown-pragmas -std=c99 -pedantic -DCONFIG_32 -DANSI -DNDEBUG -fPIC -O2 -Wall -fPIC -c transpose.c -o .objs/transpose.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar rc libmpdec.a basearith.o context.o constants.o convolute.o crt.o mpdecimal.o mpsignal.o difradix2.o fnt.o fourstep.o io.o mpalloc.o numbertheory.o sixstep.o transpose.o
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib libmpdec.a
+
+/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld -dynamiclib -install_name @rpath/libmpdec.3.dylib -compatibility_version 2.5 -current_version 2.5.1 -o libmpdec.2.5.1.dylib .objs/basearith.o .objs/context.o .objs/constants.o .objs/convolute.o .objs/crt.o .objs/mpdecimal.o .objs/mpsignal.o .objs/difradix2.o .objs/fnt.o .objs/fourstep.o .objs/io.o .objs/mpalloc.o .objs/numbertheory.o .objs/sixstep.o .objs/transpose.o -lm
+
+ld.lld: error: unknown argument '-dynamiclib'
+
+ld.lld: error: unknown argument '-install_name'
+
+ld.lld: error: unknown argument '-compatibility_version'
+
+ld.lld: error: unknown argument '-current_version'
+
+ld.lld: error: cannot open @rpath/libmpdec.3.dylib: No such file or directory
+ld.lld: error: cannot open 2.5: No such file or directory
+ld.lld: error: cannot open 2.5.1: No such file or directory
+
+ld.lld: error: unable to find library -lm
+
+make[1]: *** [libmpdec.2.5.1.dylib] Error 1
+
+make: *** [lib] Error 2
+
