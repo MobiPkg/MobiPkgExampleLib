@@ -1,0 +1,16 @@
+name: m4
+homepage: https://www.gnu.org/software/m4
+description: Macro processing language
+license-type: GPL-3.0-or-later
+source:
+  subpath: m4-1.4.19
+  http:
+    url: https://ftp.gnu.org/gnu/m4/m4-1.4.19.tar.xz
+    type: tar.xz
+    version: 1.4.19
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
