@@ -1,0 +1,16 @@
+name: gflags
+type: cmake
+homepage: https://gflags.github.io/gflags/
+description: Library for processing command-line flags
+license-type: BSD-3-Clause
+source:
+  subpath: .
+  git:
+    url: https://github.com/gflags/gflags.git
+    ref: v2.2.2
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
