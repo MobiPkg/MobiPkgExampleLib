@@ -1,0 +1,13 @@
+name: pcre2
+source:
+  subpath: pcre2-10.42
+  http:
+    url: https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.42/pcre2-10.42.tar.bz2
+    type: tar.bz2
+    version: "10.42"
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
