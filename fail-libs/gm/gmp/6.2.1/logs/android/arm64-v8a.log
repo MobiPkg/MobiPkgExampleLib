@@ -1,0 +1,2188 @@
+$ make clean
+
+Making clean in tests
+
+Making clean in .
+
+test -z "libtests.la" || rm -f libtests.la
+
+rm -f ./so_locations
+
+ rm -f t-bswap t-constants t-count_zeros t-hightomask t-modlinv t-popc t-parity t-sub
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-bswap.log t-constants.log t-count_zeros.log t-hightomask.log t-modlinv.log t-popc.log t-parity.log t-sub.log" || rm -f t-bswap.log t-constants.log t-count_zeros.log t-hightomask.log t-modlinv.log t-popc.log t-parity.log t-sub.log
+
+test -z "t-bswap.trs t-constants.trs t-count_zeros.trs t-hightomask.trs t-modlinv.trs t-popc.trs t-parity.trs t-sub.trs" || rm -f t-bswap.trs t-constants.trs t-count_zeros.trs t-hightomask.trs t-modlinv.trs t-popc.trs t-parity.trs t-sub.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in devel
+
+test -z "sqrtrem_1_2 primes try test-add_ssaaaa test-sub_ddmmss test-add_ssaaaa.c test-sub_ddmmss.c gen-test-longlong_h" || rm -f sqrtrem_1_2 primes try test-add_ssaaaa test-sub_ddmmss test-add_ssaaaa.c test-sub_ddmmss.c gen-test-longlong_h
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in mpn
+
+ rm -f t-asmtype t-aors_1 t-divrem_1 t-mod_1 t-fat t-get_d t-instrument t-iord_u t-mp_bases t-perfsqr t-scan logic t-toom22 t-toom32 t-toom33 t-toom42 t-toom43 t-toom44 t-toom52 t-toom53 t-toom54 t-toom62 t-toom63 t-toom6h t-toom8h t-toom2-sqr t-toom3-sqr t-toom4-sqr t-toom6-sqr t-toom8-sqr t-div t-mul t-mullo t-sqrlo t-mulmod_bnm1 t-sqrmod_bnm1 t-mulmid t-hgcd t-hgcd_appr t-matrix22 t-invert t-bdiv t-fib2m t-broot t-brootinv t-minvert t-sizeinbase t-gcd_11 t-gcd_22 t-gcdext_1
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-asmtype.log t-aors_1.log t-divrem_1.log t-mod_1.log t-fat.log t-get_d.log t-instrument.log t-iord_u.log t-mp_bases.log t-perfsqr.log t-scan.log logic.log t-toom22.log t-toom32.log t-toom33.log t-toom42.log t-toom43.log t-toom44.log t-toom52.log t-toom53.log t-toom54.log t-toom62.log t-toom63.log t-toom6h.log t-toom8h.log t-toom2-sqr.log t-toom3-sqr.log t-toom4-sqr.log t-toom6-sqr.log t-toom8-sqr.log t-div.log t-mul.log t-mullo.log t-sqrlo.log t-mulmod_bnm1.log t-sqrmod_bnm1.log t-mulmid.log t-hgcd.log t-hgcd_appr.log t-matrix22.log t-invert.log t-bdiv.log t-fib2m.log t-broot.log t-brootinv.log t-minvert.log t-sizeinbase.log t-gcd_11.log t-gcd_22.log t-gcdext_1.log" || rm -f t-asmtype.log t-aors_1.log t-divrem_1.log t-mod_1.log t-fat.log t-get_d.log t-instrument.log t-iord_u.log t-mp_bases.log t-perfsqr.log t-scan.log logic.log t-toom22.log t-toom32.log t-toom33.log t-toom42.log t-toom43.log t-toom44.log t-toom52.log t-toom53.log t-toom54.log t-toom62.log t-toom63.log t-toom6h.log t-toom8h.log t-toom2-sqr.log t-toom3-sqr.log t-toom4-sqr.log t-toom6-sqr.log t-toom8-sqr.log t-div.log t-mul.log t-mullo.log t-sqrlo.log t-mulmod_bnm1.log t-sqrmod_bnm1.log t-mulmid.log t-hgcd.log t-hgcd_appr.log t-matrix22.log t-invert.log t-bdiv.log t-fib2m.log t-broot.log t-brootinv.log t-minvert.log t-sizeinbase.log t-gcd_11.log t-gcd_22.log t-gcdext_1.log
+
+test -z "t-asmtype.trs t-aors_1.trs t-divrem_1.trs t-mod_1.trs t-fat.trs t-get_d.trs t-instrument.trs t-iord_u.trs t-mp_bases.trs t-perfsqr.trs t-scan.trs logic.trs t-toom22.trs t-toom32.trs t-toom33.trs t-toom42.trs t-toom43.trs t-toom44.trs t-toom52.trs t-toom53.trs t-toom54.trs t-toom62.trs t-toom63.trs t-toom6h.trs t-toom8h.trs t-toom2-sqr.trs t-toom3-sqr.trs t-toom4-sqr.trs t-toom6-sqr.trs t-toom8-sqr.trs t-div.trs t-mul.trs t-mullo.trs t-sqrlo.trs t-mulmod_bnm1.trs t-sqrmod_bnm1.trs t-mulmid.trs t-hgcd.trs t-hgcd_appr.trs t-matrix22.trs t-invert.trs t-bdiv.trs t-fib2m.trs t-broot.trs t-brootinv.trs t-minvert.trs t-sizeinbase.trs t-gcd_11.trs t-gcd_22.trs t-gcdext_1.trs" || rm -f t-asmtype.trs t-aors_1.trs t-divrem_1.trs t-mod_1.trs t-fat.trs t-get_d.trs t-instrument.trs t-iord_u.trs t-mp_bases.trs t-perfsqr.trs t-scan.trs logic.trs t-toom22.trs t-toom32.trs t-toom33.trs t-toom42.trs t-toom43.trs t-toom44.trs t-toom52.trs t-toom53.trs t-toom54.trs t-toom62.trs t-toom63.trs t-toom6h.trs t-toom8h.trs t-toom2-sqr.trs t-toom3-sqr.trs t-toom4-sqr.trs t-toom6-sqr.trs t-toom8-sqr.trs t-div.trs t-mul.trs t-mullo.trs t-sqrlo.trs t-mulmod_bnm1.trs t-sqrmod_bnm1.trs t-mulmid.trs t-hgcd.trs t-hgcd_appr.trs t-matrix22.trs t-invert.trs t-bdiv.trs t-fib2m.trs t-broot.trs t-brootinv.trs t-minvert.trs t-sizeinbase.trs t-gcd_11.trs t-gcd_22.trs t-gcdext_1.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in mpz
+
+ rm -f reuse t-addsub t-cmp t-mul t-mul_i t-tdiv t-tdiv_ui t-fdiv t-fdiv_ui t-cdiv_ui t-gcd t-gcd_ui t-lcm t-invert dive dive_ui t-sqrtrem convert io t-inp_str logic t-bit t-powm t-powm_ui t-pow t-div_2exp t-root t-perfsqr t-perfpow t-jac t-bin t-get_d t-get_d_2exp t-get_si t-set_d t-set_si t-lucm t-fac_ui t-mfac_uiui t-primorial_ui t-fib_ui t-lucnum_ui t-scan t-fits t-divis t-divis_2exp t-cong t-cong_2exp t-sizeinbase t-set_str t-aorsmul t-cmp_d t-cmp_si t-hamdist t-oddeven t-popcount t-set_f t-io_raw t-import t-export t-pprime_p t-nextprime t-remove t-limbs
+
+test -z "*.tmp" || rm -f *.tmp
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "reuse.log t-addsub.log t-cmp.log t-mul.log t-mul_i.log t-tdiv.log t-tdiv_ui.log t-fdiv.log t-fdiv_ui.log t-cdiv_ui.log t-gcd.log t-gcd_ui.log t-lcm.log t-invert.log dive.log dive_ui.log t-sqrtrem.log convert.log io.log t-inp_str.log logic.log t-bit.log t-powm.log t-powm_ui.log t-pow.log t-div_2exp.log t-root.log t-perfsqr.log t-perfpow.log t-jac.log t-bin.log t-get_d.log t-get_d_2exp.log t-get_si.log t-set_d.log t-set_si.log t-lucm.log t-fac_ui.log t-mfac_uiui.log t-primorial_ui.log t-fib_ui.log t-lucnum_ui.log t-scan.log t-fits.log t-divis.log t-divis_2exp.log t-cong.log t-cong_2exp.log t-sizeinbase.log t-set_str.log t-aorsmul.log t-cmp_d.log t-cmp_si.log t-hamdist.log t-oddeven.log t-popcount.log t-set_f.log t-io_raw.log t-import.log t-export.log t-pprime_p.log t-nextprime.log t-remove.log t-limbs.log" || rm -f reuse.log t-addsub.log t-cmp.log t-mul.log t-mul_i.log t-tdiv.log t-tdiv_ui.log t-fdiv.log t-fdiv_ui.log t-cdiv_ui.log t-gcd.log t-gcd_ui.log t-lcm.log t-invert.log dive.log dive_ui.log t-sqrtrem.log convert.log io.log t-inp_str.log logic.log t-bit.log t-powm.log t-powm_ui.log t-pow.log t-div_2exp.log t-root.log t-perfsqr.log t-perfpow.log t-jac.log t-bin.log t-get_d.log t-get_d_2exp.log t-get_si.log t-set_d.log t-set_si.log t-lucm.log t-fac_ui.log t-mfac_uiui.log t-primorial_ui.log t-fib_ui.log t-lucnum_ui.log t-scan.log t-fits.log t-divis.log t-divis_2exp.log t-cong.log t-cong_2exp.log t-sizeinbase.log t-set_str.log t-aorsmul.log t-cmp_d.log t-cmp_si.log t-hamdist.log t-oddeven.log t-popcount.log t-set_f.log t-io_raw.log t-import.log t-export.log t-pprime_p.log t-nextprime.log t-remove.log t-limbs.log
+
+test -z "reuse.trs t-addsub.trs t-cmp.trs t-mul.trs t-mul_i.trs t-tdiv.trs t-tdiv_ui.trs t-fdiv.trs t-fdiv_ui.trs t-cdiv_ui.trs t-gcd.trs t-gcd_ui.trs t-lcm.trs t-invert.trs dive.trs dive_ui.trs t-sqrtrem.trs convert.trs io.trs t-inp_str.trs logic.trs t-bit.trs t-powm.trs t-powm_ui.trs t-pow.trs t-div_2exp.trs t-root.trs t-perfsqr.trs t-perfpow.trs t-jac.trs t-bin.trs t-get_d.trs t-get_d_2exp.trs t-get_si.trs t-set_d.trs t-set_si.trs t-lucm.trs t-fac_ui.trs t-mfac_uiui.trs t-primorial_ui.trs t-fib_ui.trs t-lucnum_ui.trs t-scan.trs t-fits.trs t-divis.trs t-divis_2exp.trs t-cong.trs t-cong_2exp.trs t-sizeinbase.trs t-set_str.trs t-aorsmul.trs t-cmp_d.trs t-cmp_si.trs t-hamdist.trs t-oddeven.trs t-popcount.trs t-set_f.trs t-io_raw.trs t-import.trs t-export.trs t-pprime_p.trs t-nextprime.trs t-remove.trs t-limbs.trs" || rm -f reuse.trs t-addsub.trs t-cmp.trs t-mul.trs t-mul_i.trs t-tdiv.trs t-tdiv_ui.trs t-fdiv.trs t-fdiv_ui.trs t-cdiv_ui.trs t-gcd.trs t-gcd_ui.trs t-lcm.trs t-invert.trs dive.trs dive_ui.trs t-sqrtrem.trs convert.trs io.trs t-inp_str.trs logic.trs t-bit.trs t-powm.trs t-powm_ui.trs t-pow.trs t-div_2exp.trs t-root.trs t-perfsqr.trs t-perfpow.trs t-jac.trs t-bin.trs t-get_d.trs t-get_d_2exp.trs t-get_si.trs t-set_d.trs t-set_si.trs t-lucm.trs t-fac_ui.trs t-mfac_uiui.trs t-primorial_ui.trs t-fib_ui.trs t-lucnum_ui.trs t-scan.trs t-fits.trs t-divis.trs t-divis_2exp.trs t-cong.trs t-cong_2exp.trs t-sizeinbase.trs t-set_str.trs t-aorsmul.trs t-cmp_d.trs t-cmp_si.trs t-hamdist.trs t-oddeven.trs t-popcount.trs t-set_f.trs t-io_raw.trs t-import.trs t-export.trs t-pprime_p.trs t-nextprime.trs t-remove.trs t-limbs.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in mpq
+
+ rm -f t-aors t-cmp t-cmp_ui t-cmp_si t-equal t-get_d t-get_str t-inp_str t-inv t-md_2exp t-set_f t-set_str io reuse t-cmp_z
+
+test -z "*.tmp" || rm -f *.tmp
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-aors.log t-cmp.log t-cmp_ui.log t-cmp_si.log t-equal.log t-get_d.log t-get_str.log t-inp_str.log t-inv.log t-md_2exp.log t-set_f.log t-set_str.log io.log reuse.log t-cmp_z.log" || rm -f t-aors.log t-cmp.log t-cmp_ui.log t-cmp_si.log t-equal.log t-get_d.log t-get_str.log t-inp_str.log t-inv.log t-md_2exp.log t-set_f.log t-set_str.log io.log reuse.log t-cmp_z.log
+
+test -z "t-aors.trs t-cmp.trs t-cmp_ui.trs t-cmp_si.trs t-equal.trs t-get_d.trs t-get_str.trs t-inp_str.trs t-inv.trs t-md_2exp.trs t-set_f.trs t-set_str.trs io.trs reuse.trs t-cmp_z.trs" || rm -f t-aors.trs t-cmp.trs t-cmp_ui.trs t-cmp_si.trs t-equal.trs t-get_d.trs t-get_str.trs t-inp_str.trs t-inv.trs t-md_2exp.trs t-set_f.trs t-set_str.trs io.trs reuse.trs t-cmp_z.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in mpf
+
+ rm -f t-dm2exp t-conv t-add t-sub t-sqrt t-sqrt_ui t-muldiv reuse t-cmp_d t-cmp_si t-div t-fits t-get_d t-get_d_2exp t-get_si t-get_ui t-gsprec t-inp_str t-int_p t-mul_ui t-set t-set_q t-set_si t-set_ui t-trunc t-ui_div t-eq t-pow_ui
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-dm2exp.log t-conv.log t-add.log t-sub.log t-sqrt.log t-sqrt_ui.log t-muldiv.log reuse.log t-cmp_d.log t-cmp_si.log t-div.log t-fits.log t-get_d.log t-get_d_2exp.log t-get_si.log t-get_ui.log t-gsprec.log t-inp_str.log t-int_p.log t-mul_ui.log t-set.log t-set_q.log t-set_si.log t-set_ui.log t-trunc.log t-ui_div.log t-eq.log t-pow_ui.log" || rm -f t-dm2exp.log t-conv.log t-add.log t-sub.log t-sqrt.log t-sqrt_ui.log t-muldiv.log reuse.log t-cmp_d.log t-cmp_si.log t-div.log t-fits.log t-get_d.log t-get_d_2exp.log t-get_si.log t-get_ui.log t-gsprec.log t-inp_str.log t-int_p.log t-mul_ui.log t-set.log t-set_q.log t-set_si.log t-set_ui.log t-trunc.log t-ui_div.log t-eq.log t-pow_ui.log
+
+test -z "t-dm2exp.trs t-conv.trs t-add.trs t-sub.trs t-sqrt.trs t-sqrt_ui.trs t-muldiv.trs reuse.trs t-cmp_d.trs t-cmp_si.trs t-div.trs t-fits.trs t-get_d.trs t-get_d_2exp.trs t-get_si.trs t-get_ui.trs t-gsprec.trs t-inp_str.trs t-int_p.trs t-mul_ui.trs t-set.trs t-set_q.trs t-set_si.trs t-set_ui.trs t-trunc.trs t-ui_div.trs t-eq.trs t-pow_ui.trs" || rm -f t-dm2exp.trs t-conv.trs t-add.trs t-sub.trs t-sqrt.trs t-sqrt_ui.trs t-muldiv.trs reuse.trs t-cmp_d.trs t-cmp_si.trs t-div.trs t-fits.trs t-get_d.trs t-get_d_2exp.trs t-get_si.trs t-get_ui.trs t-gsprec.trs t-inp_str.trs t-int_p.trs t-mul_ui.trs t-set.trs t-set_q.trs t-set_si.trs t-set_ui.trs t-trunc.trs t-ui_div.trs t-eq.trs t-pow_ui.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in rand
+
+ rm -f t-iset t-lc2exp t-mt t-rand t-urbui t-urmui t-urndmm
+
+test -z "findlc gen gen.static spect stat libstat.la" || rm -f findlc gen gen.static spect stat libstat.la
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-iset.log t-lc2exp.log t-mt.log t-rand.log t-urbui.log t-urmui.log t-urndmm.log" || rm -f t-iset.log t-lc2exp.log t-mt.log t-rand.log t-urbui.log t-urmui.log t-urndmm.log
+
+test -z "t-iset.trs t-lc2exp.trs t-mt.trs t-rand.trs t-urbui.trs t-urmui.trs t-urndmm.trs" || rm -f t-iset.trs t-lc2exp.trs t-mt.trs t-rand.trs t-urbui.trs t-urmui.trs t-urndmm.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in misc
+
+ rm -f t-printf t-scanf t-locale
+
+test -z "*.tmp" || rm -f *.tmp
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-printf.log t-scanf.log t-locale.log" || rm -f t-printf.log t-scanf.log t-locale.log
+
+test -z "t-printf.trs t-scanf.trs t-locale.trs" || rm -f t-printf.trs t-scanf.trs t-locale.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in cxx
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "" || rm -f 
+
+test -z "" || rm -f 
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in mpn
+
+rm -rf .libs _libs
+
+test -z "libmpn.la" || rm -f libmpn.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in mpz
+
+rm -rf .libs _libs
+
+test -z "libmpz.la" || rm -f libmpz.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in mpq
+
+rm -rf .libs _libs
+
+test -z "libmpq.la" || rm -f libmpq.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in mpf
+
+rm -rf .libs _libs
+
+test -z "libmpf.la" || rm -f libmpf.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in printf
+
+rm -rf .libs _libs
+
+test -z "libprintf.la" || rm -f libprintf.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in scanf
+
+rm -rf .libs _libs
+
+test -z "libscanf.la" || rm -f libscanf.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in rand
+
+rm -rf .libs _libs
+
+test -z "librandom.la" || rm -f librandom.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in cxx
+
+rm -rf .libs _libs
+
+test -z "" || rm -f 
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in demos
+
+Making clean in calc
+
+test -z "calc" || rm -f calc
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in expr
+
+test -z "run-expr t-expr libexpr.a" || rm -f run-expr t-expr libexpr.a
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+test -z "factorize isprime pexpr primes qcn" || rm -f factorize isprime pexpr primes qcn
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in tune
+
+test -z "speed speed-dynamic speed-ext tuneup tune-gcd-p libspeed.la div_qr_2.c bdiv_q.c bdiv_qr.c dcpi1_div_qr.c dcpi1_divappr_q.c dcpi1_bdiv_qr.c dcpi1_bdiv_q.c invertappr.c invert.c binvert.c divrem_2.c gcd.c gcdext.c get_str.c set_str.c matrix22_mul.c hgcd.c hgcd_appr.c hgcd_reduce.c mul_n.c sqr.c sec_powm.c mullo_n.c mul_fft.c mul.c tdiv_qr.c mulmod_bnm1.c sqrmod_bnm1.c mulmid.c mulmid_n.c toom42_mulmid.c sqrlo.c sqrlo_basecase.c nussbaumer_mul.c toom6h_mul.c toom8h_mul.c toom6_sqr.c toom8_sqr.c toom22_mul.c toom2_sqr.c toom33_mul.c toom3_sqr.c toom44_mul.c toom4_sqr.c divrem_1.c mod_1.c fac_ui.c sqr_asm.asm stg.gnuplot stg.data mtg.gnuplot mtg.data fibg.gnuplot fibg.data graph.gnuplot graph.data " || rm -f speed speed-dynamic speed-ext tuneup tune-gcd-p libspeed.la div_qr_2.c bdiv_q.c bdiv_qr.c dcpi1_div_qr.c dcpi1_divappr_q.c dcpi1_bdiv_qr.c dcpi1_bdiv_q.c invertappr.c invert.c binvert.c divrem_2.c gcd.c gcdext.c get_str.c set_str.c matrix22_mul.c hgcd.c hgcd_appr.c hgcd_reduce.c mul_n.c sqr.c sec_powm.c mullo_n.c mul_fft.c mul.c tdiv_qr.c mulmod_bnm1.c sqrmod_bnm1.c mulmid.c mulmid_n.c toom42_mulmid.c sqrlo.c sqrlo_basecase.c nussbaumer_mul.c toom6h_mul.c toom8h_mul.c toom6_sqr.c toom8_sqr.c toom22_mul.c toom2_sqr.c toom33_mul.c toom3_sqr.c toom44_mul.c toom4_sqr.c divrem_1.c mod_1.c fac_ui.c sqr_asm.asm stg.gnuplot stg.data mtg.gnuplot mtg.data fibg.gnuplot fibg.data graph.gnuplot graph.data 
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in doc
+
+test -z "gmp.dvi gmp.pdf gmp.ps gmp.html" \
+	|| rm -rf gmp.dvi gmp.pdf gmp.ps gmp.html
+
+rm -rf .libs _libs
+
+rm -rf gmp.t2d gmp.t2p
+
+rm -f *.lo
+
+rm -f vti.tmp* ./version.texi.tmp*
+
+test -z "libgmp.la " || rm -f libgmp.la 
+
+rm -f ./so_locations
+
+rm -rf .libs _libs
+
+rm -rf cxx/.libs cxx/_libs
+
+if [ -d mini-gmp/tests ] ; then \
+	  abs_srcdir="`cd . && pwd`" ; \
+	  cd mini-gmp/tests \
+	  && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f "$abs_srcdir/mini-gmp/tests/Makefile" clean ; \
+	fi
+
+rm -f *.o t-add t-sub t-mul t-invert t-div t-div_2exp t-double t-cmp_d t-gcd t-lcm t-import t-comb t-signed t-sqrt t-root t-powm t-logops t-bitops t-scan t-str t-reuse t-aorsmul t-limbs t-cong t-pprime_p t-lucm t-mpq_addsub t-mpq_muldiv t-mpq_muldiv_2exp t-mpq_str t-mpq_double
+
+rm -f *.o
+
+rm -f cxx/*.o
+
+rm -f cxx/*.lo
+
+rm -f *.lo
+
+$ ./configure --prefix=/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/gmp/install/android/arm64-v8a --exec-prefix /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/gmp/install/android/arm64-v8a --host aarch64-linux-android
+
+checking build system type... 
+x86_64-apple-darwin19.6.0
+
+checking host system type... 
+aarch64-unknown-linux-android
+
+checking for a BSD-compatible install... 
+/usr/local/bin/ginstall -c
+
+checking whether build environment is sane... 
+yes
+
+checking for aarch64-linux-android-strip... /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip
+
+checking for a thread-safe mkdir -p... 
+/usr/local/bin/gmkdir -p
+
+checking for gawk... 
+no
+
+checking for mawk... 
+no
+checking for nawk... 
+no
+checking for awk... 
+awk
+checking whether make sets $(MAKE)... 
+yes
+
+checking whether make supports nested variables... 
+yes
+
+checking whether to enable maintainer-specific portions of Makefiles... no
+
+checking ABI=64
+
+checking whether /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang is gcc... yes
+
+checking compiler /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -fPIC -O2 -Wall ... 
+yes
+
+checking compiler /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -fPIC -O2 -Wall has sizeof(void*)==8... 
+yes
+
+checking for aarch64-linux-android-gcc... 
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang
+
+checking whether the C compiler works... 
+yes
+checking for C compiler default output file name... 
+a.out
+
+checking for suffix of executables... 
+
+
+checking whether we are cross compiling... 
+yes
+
+checking for suffix of object files... 
+o
+checking whether we are using the GNU C compiler... 
+yes
+
+checking whether /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang accepts -g... 
+yes
+
+checking for /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang option to accept ISO C89... 
+none needed
+
+checking whether /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang understands -c and -o together... 
+yes
+
+checking for /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang option to accept ISO C99... 
+none needed
+
+checking how to run the C preprocessor... 
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -E
+
+checking build system compiler /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang... 
+no
+checking build system compiler /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -fPIC -O2 -Wall ... 
+no
+checking build system compiler cc... 
+yes
+
+checking for build system preprocessor... 
+cc -E
+checking for build system executable suffix... 
+
+checking whether build system compiler is ANSI... 
+yes
+checking for build system compiler math library... 
+-lm
+
+checking for grep that handles long lines and -e... 
+/usr/bin/grep
+checking for egrep... 
+/usr/bin/grep -E
+
+using ABI="64"
+      CC="/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang"
+      CFLAGS="-fPIC -O2 -Wall"
+      CPPFLAGS=""
+      MPN_PATH=" arm64 generic"
+
+checking whether assembler supports --noexecstack option... 
+yes
+
+checking for aarch64-linux-android-ar... /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar
+
+checking for BSD- or MS-compatible name lister (nm)... 
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-nm
+
+checking the name lister (/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-nm) interface... 
+BSD nm
+
+checking how to print strings... 
+printf
+checking for a sed that does not truncate output... 
+/usr/local/bin/gsed
+
+checking for fgrep... 
+/usr/bin/grep -F
+
+checking for ld used by /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang... 
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld
+
+checking if the linker (/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld) is GNU ld... 
+yes
+checking whether ln -s works... 
+yes
+
+checking the maximum length of command line arguments... 
+196608
+
+checking how to convert x86_64-apple-darwin19.6.0 file names to aarch64-unknown-linux-android format... 
+func_convert_file_noop
+checking how to convert x86_64-apple-darwin19.6.0 file names to toolchain format... 
+func_convert_file_noop
+
+checking for /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld option to reload object files... 
+-r
+checking for aarch64-linux-android-objdump... 
+objdump
+
+checking how to recognize dependent libraries... 
+pass_all
+
+checking for aarch64-linux-android-dlltool... 
+dlltool
+
+checking how to associate runtime and link libraries... 
+printf %s\n
+
+checking for aarch64-linux-android-ar... (cached) /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ar
+
+checking for archiver @FILE support... 
+@
+
+checking for aarch64-linux-android-strip... (cached) 
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip
+
+checking for aarch64-linux-android-ranlib... 
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-ranlib
+
+checking command to parse /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-nm output from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang object... 
+ok
+
+checking for sysroot... 
+no
+checking for a working dd... 
+/bin/dd
+checking how to truncate binary pipes... 
+/bin/dd bs=4096 count=1
+
+checking for aarch64-linux-android-mt... 
+no
+
+checking for mt... 
+no
+
+checking if : is a manifest tool... 
+no
+
+checking for ANSI C header files... 
+yes
+
+checking for sys/types.h... 
+yes
+
+checking for sys/stat.h... 
+yes
+
+checking for stdlib.h... 
+yes
+
+checking for string.h... 
+yes
+
+checking for memory.h... 
+yes
+
+checking for strings.h... 
+yes
+
+checking for inttypes.h... 
+yes
+
+checking for stdint.h... 
+yes
+
+checking for unistd.h... 
+yes
+
+checking for dlfcn.h... 
+yes
+
+checking for objdir... 
+.libs
+
+checking if /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang supports -fno-rtti -fno-exceptions... 
+yes
+
+checking for /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang option to produce PIC... 
+-fPIC -DPIC
+
+checking if /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang PIC flag -fPIC -DPIC works... 
+yes
+
+checking if /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang static flag -static works... 
+yes
+checking if /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang supports -c -o file.o... 
+yes
+checking if /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang supports -c -o file.o... (cached) 
+yes
+checking whether the /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang linker (/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld) supports shared libraries... 
+yes
+checking whether -lc should be explicitly linked in... 
+no
+checking dynamic linker characteristics... 
+Android linker
+
+checking how to hardcode library paths into programs... 
+immediate
+
+checking whether stripping libraries is possible... 
+yes
+checking if libtool supports shared libraries... yes
+
+checking whether to build shared libraries... yes
+
+checking whether to build static libraries... yes
+
+checking how to run the C++ preprocessor... 
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++ -E
+
+checking whether the /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++ linker (/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld) supports shared libraries... 
+yes
+
+checking for /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++ option to produce PIC...  -DPIC
+
+checking if /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++ PIC flag  -DPIC works... 
+yes
+
+checking if /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++ static flag  works... 
+yes
+
+checking if /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++ supports -c -o file.o... 
+yes
+checking if /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++ supports -c -o file.o... (cached) 
+yes
+
+checking whether the /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang++ linker (/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld) supports shared libraries... 
+yes
+
+checking dynamic linker characteristics... 
+Android linker
+
+checking how to hardcode library paths into programs... immediate
+
+checking for ANSI C header files... 
+(cached) 
+yes
+
+checking whether time.h and sys/time.h may both be included... 
+yes
+
+checking fcntl.h usability... 
+yes
+checking fcntl.h presence... 
+yes
+checking for fcntl.h... 
+yes
+
+checking float.h usability... 
+yes
+checking float.h presence... 
+yes
+checking for float.h... 
+yes
+
+checking invent.h usability... 
+no
+checking invent.h presence... 
+no
+checking for invent.h... 
+no
+
+checking langinfo.h usability... 
+yes
+checking langinfo.h presence... 
+yes
+checking for langinfo.h... 
+yes
+
+checking locale.h usability... 
+yes
+checking locale.h presence... 
+yes
+checking for locale.h... 
+yes
+
+checking nl_types.h usability... 
+yes
+checking nl_types.h presence... 
+yes
+checking for nl_types.h... yes
+
+checking sys/attributes.h usability... 
+no
+checking sys/attributes.h presence... 
+no
+checking for sys/attributes.h... 
+no
+
+checking sys/iograph.h usability... 
+no
+checking sys/iograph.h presence... 
+no
+checking for sys/iograph.h... 
+no
+
+checking sys/mman.h usability... 
+yes
+checking sys/mman.h presence... 
+yes
+checking for sys/mman.h... 
+yes
+
+checking sys/param.h usability... 
+yes
+checking sys/param.h presence... 
+yes
+checking for sys/param.h... 
+yes
+
+checking sys/processor.h usability... 
+no
+checking sys/processor.h presence... 
+no
+checking for sys/processor.h... 
+no
+
+checking sys/pstat.h usability... 
+no
+checking sys/pstat.h presence... 
+no
+checking for sys/pstat.h... 
+no
+
+checking sys/sysinfo.h usability... 
+yes
+checking sys/sysinfo.h presence... 
+yes
+checking for sys/sysinfo.h... 
+yes
+
+checking sys/syssgi.h usability... 
+no
+checking sys/syssgi.h presence... 
+no
+checking for sys/syssgi.h... 
+no
+
+checking sys/systemcfg.h usability... 
+no
+checking sys/systemcfg.h presence... 
+no
+checking for sys/systemcfg.h... 
+no
+
+checking sys/time.h usability... 
+yes
+checking sys/time.h presence... 
+yes
+
+checking for sys/time.h... 
+yes
+
+checking sys/times.h usability... 
+yes
+checking sys/times.h presence... 
+yes
+checking for sys/times.h... 
+yes
+
+checking for sys/resource.h... 
+yes
+
+checking for sys/sysctl.h... 
+no
+
+checking for machine/hal_sysinfo.h... 
+no
+
+checking whether fgetc is declared... 
+yes
+
+checking whether fscanf is declared... 
+yes
+
+checking whether optarg is declared... 
+yes
+
+checking whether ungetc is declared... 
+yes
+
+checking whether vfprintf is declared... 
+yes
+
+checking whether sys_errlist is declared... 
+no
+
+checking whether sys_nerr is declared... 
+no
+
+checking return type of signal handlers... 
+void
+
+checking for intmax_t... 
+yes
+
+checking for long double... 
+yes
+
+checking for long long... 
+yes
+
+checking for ptrdiff_t... 
+yes
+
+checking for quad_t... 
+no
+
+checking for uint_least32_t... 
+yes
+
+checking for intptr_t... 
+yes
+
+checking for working volatile... 
+yes
+checking for C/C++ restrict keyword... 
+__restrict
+
+checking whether gcc __attribute__ ((const)) works... 
+yes
+
+checking whether gcc __attribute__ ((malloc)) works... 
+yes
+
+checking whether gcc __attribute__ ((mode (XX))) works... 
+yes
+
+checking whether gcc __attribute__ ((noreturn)) works... 
+yes
+
+checking whether gcc hidden aliases work... 
+yes
+
+checking for inline... 
+inline
+
+checking for cos in -lm... 
+yes
+
+checking for working alloca.h... 
+yes
+
+checking for alloca (via gmp-impl.h)... 
+yes
+
+checking how to allocate temporary memory... 
+alloca
+
+checking whether byte ordering is bigendian... 
+no
+
+checking format of `double' floating point... 
+IEEE little endian
+
+checking for alarm... 
+yes
+
+checking for attr_get... 
+no
+
+checking for clock... 
+yes
+
+checking for cputime... 
+no
+
+checking for getpagesize... 
+yes
+
+checking for getrusage... 
+yes
+
+checking for gettimeofday... 
+yes
+
+checking for getsysinfo... 
+no
+
+checking for localeconv... 
+yes
+
+checking for memset... 
+yes
+
+checking for mmap... 
+yes
+
+checking for mprotect... 
+yes
+
+checking for nl_langinfo... 
+no
+
+checking for obstack_vprintf... 
+no
+
+checking for popen... 
+yes
+
+checking for processor_info... 
+no
+
+checking for pstat_getprocessor... 
+no
+
+checking for raise... 
+yes
+
+checking for read_real_time... 
+no
+
+checking for sigaction... 
+yes
+
+checking for sigaltstack... 
+yes
+
+checking for sigstack... 
+no
+
+checking for syssgi... 
+no
+
+checking for strchr... 
+yes
+
+checking for strerror... 
+yes
+
+checking for strnlen... 
+yes
+
+checking for strtol... 
+yes
+
+checking for strtoul... 
+yes
+
+checking for sysconf... 
+yes
+
+checking for sysctl... 
+no
+
+checking for sysctlbyname... 
+no
+
+checking for times... 
+yes
+
+checking for library containing clock_gettime... 
+none required
+
+checking for vsnprintf... 
+yes
+
+checking whether vsnprintf works... probably
+
+configure: WARNING: cannot check for properly working vsnprintf when cross compiling, will assume it's ok
+
+checking whether sscanf needs writable input... no
+
+checking for struct pst_processor.psp_iticksperclktick... 
+no
+
+checking for suitable m4... 
+m4
+checking if m4wrap produces spurious output... 
+no
+
+checking how to switch to text section... 
+.text
+
+checking how to switch to data section... 
+.data
+
+checking for assembler label suffix... 
+:
+
+checking for assembler global directive... 
+.globl
+
+checking for assembler global directive attribute... 
+
+checking if globals are prefixed by underscore... 
+no
+
+checking how to switch to read-only data section... 
+	.section	.rodata,"a",@progbits
+
+checking for assembler .type directive... 
+.type	$1,@$2
+
+checking for assembler .size directive... 
+.size	$1,$2
+
+checking for assembler local label prefix... 
+.L
+
+checking for assembler byte directive... 
+.byte
+checking how to define a 32-bit word... 
+.long
+
+checking if .align assembly directive is logarithmic... 
+yes
+
+checking size of void *... 
+8
+
+checking size of unsigned short... 
+2
+
+checking size of unsigned... 
+4
+
+checking size of unsigned long... 
+8
+
+checking size of mp_limb_t... 
+8
+
+checking for stack_t... 
+yes
+
+checking for tputs in -lncurses... 
+no
+checking for tputs in -lcurses... 
+no
+
+checking for readline in -lreadline... 
+no
+checking readline detected... 
+no
+
+checking for bison... 
+bison -y
+
+checking for flex... 
+flex
+
+checking lex output file root... lex.yy
+
+checking lex library... 
+none needed
+checking whether yytext is a pointer... 
+no
+
+creating config.m4
+
+checking that generated files are newer than configure... 
+done
+
+configure: creating ./config.status
+
+config.status: creating demos/pexpr-config.h
+
+config.status: creating demos/calc/calc-config.h
+
+config.status: creating Makefile
+
+config.status: creating mpf/Makefile
+
+config.status: creating mpn/Makefile
+
+config.status: creating mpq/Makefile
+
+config.status: creating mpz/Makefile
+
+config.status: creating printf/Makefile
+
+config.status: creating scanf/Makefile
+
+config.status: creating rand/Makefile
+
+config.status: creating cxx/Makefile
+
+config.status: creating tests/Makefile
+
+config.status: creating tests/devel/Makefile
+
+config.status: creating tests/mpf/Makefile
+
+config.status: creating tests/mpn/Makefile
+
+config.status: creating tests/mpq/Makefile
+
+config.status: creating tests/mpz/Makefile
+
+config.status: creating tests/rand/Makefile
+
+config.status: creating tests/misc/Makefile
+
+config.status: creating tests/cxx/Makefile
+
+config.status: creating doc/Makefile
+
+config.status: creating tune/Makefile
+
+config.status: creating demos/Makefile
+
+config.status: creating demos/calc/Makefile
+
+config.status: creating demos/expr/Makefile
+
+config.status: creating gmp.h
+
+config.status: creating gmp.pc
+
+config.status: creating gmpxx.pc
+
+config.status: creating config.h
+
+config.status: linking mpn/generic/add.c to mpn/add.c
+
+config.status: linking mpn/generic/add_1.c to mpn/add_1.c
+
+config.status: linking mpn/arm64/aors_n.asm to mpn/add_n.asm
+
+config.status: linking mpn/generic/sub.c to mpn/sub.c
+
+config.status: linking mpn/generic/sub_1.c to mpn/sub_1.c
+
+config.status: linking mpn/arm64/aors_n.asm to mpn/sub_n.asm
+
+config.status: linking mpn/arm64/cnd_aors_n.asm to mpn/cnd_add_n.asm
+
+config.status: linking mpn/arm64/cnd_aors_n.asm to mpn/cnd_sub_n.asm
+
+config.status: linking mpn/generic/cnd_swap.c to mpn/cnd_swap.c
+
+config.status: linking mpn/generic/neg.c to mpn/neg.c
+
+config.status: linking mpn/arm64/com.asm to mpn/com.asm
+
+config.status: linking mpn/arm64/mul_1.asm to mpn/mul_1.asm
+
+config.status: linking mpn/arm64/aorsmul_1.asm to mpn/addmul_1.asm
+
+config.status: linking mpn/arm64/aorsmul_1.asm to mpn/submul_1.asm
+
+config.status: linking mpn/generic/add_err1_n.c to mpn/add_err1_n.c
+
+config.status: linking mpn/generic/add_err2_n.c to mpn/add_err2_n.c
+
+config.status: linking mpn/generic/add_err3_n.c to mpn/add_err3_n.c
+
+config.status: linking mpn/generic/sub_err1_n.c to mpn/sub_err1_n.c
+
+config.status: linking mpn/generic/sub_err2_n.c to mpn/sub_err2_n.c
+
+config.status: linking mpn/generic/sub_err3_n.c to mpn/sub_err3_n.c
+
+config.status: linking mpn/arm64/lshift.asm to mpn/lshift.asm
+
+config.status: linking mpn/arm64/rshift.asm to mpn/rshift.asm
+
+config.status: linking mpn/generic/dive_1.c to mpn/dive_1.c
+
+config.status: linking mpn/generic/diveby3.c to mpn/diveby3.c
+
+config.status: linking mpn/generic/divis.c to mpn/divis.c
+
+config.status: linking mpn/generic/divrem.c to mpn/divrem.c
+
+config.status: linking mpn/generic/divrem_1.c to mpn/divrem_1.c
+
+config.status: linking mpn/generic/divrem_2.c to mpn/divrem_2.c
+
+config.status: linking mpn/generic/fib2_ui.c to mpn/fib2_ui.c
+
+config.status: linking mpn/generic/fib2m.c to mpn/fib2m.c
+
+config.status: linking mpn/generic/mod_1.c to mpn/mod_1.c
+
+config.status: linking mpn/arm64/mod_34lsub1.asm to mpn/mod_34lsub1.asm
+
+config.status: linking mpn/generic/mode1o.c to mpn/mode1o.c
+
+config.status: linking mpn/generic/pre_divrem_1.c to mpn/pre_divrem_1.c
+
+config.status: linking mpn/generic/pre_mod_1.c to mpn/pre_mod_1.c
+
+config.status: linking mpn/generic/dump.c to mpn/dump.c
+
+config.status: linking mpn/generic/mod_1_1.c to mpn/mod_1_1.c
+
+config.status: linking mpn/generic/mod_1_2.c to mpn/mod_1_2.c
+
+config.status: linking mpn/generic/mod_1_3.c to mpn/mod_1_3.c
+
+config.status: linking mpn/generic/mod_1_4.c to mpn/mod_1_4.c
+
+config.status: linking mpn/arm64/lshiftc.asm to mpn/lshiftc.asm
+
+config.status: linking mpn/generic/mul.c to mpn/mul.c
+
+config.status: linking mpn/generic/mul_fft.c to mpn/mul_fft.c
+
+config.status: linking mpn/generic/mul_n.c to mpn/mul_n.c
+
+config.status: linking mpn/generic/sqr.c to mpn/sqr.c
+
+config.status: linking mpn/generic/mul_basecase.c to mpn/mul_basecase.c
+
+config.status: linking mpn/generic/sqr_basecase.c to mpn/sqr_basecase.c
+
+config.status: linking mpn/generic/nussbaumer_mul.c to mpn/nussbaumer_mul.c
+
+config.status: linking mpn/generic/mulmid_basecase.c to mpn/mulmid_basecase.c
+
+config.status: linking mpn/generic/toom42_mulmid.c to mpn/toom42_mulmid.c
+
+config.status: linking mpn/generic/mulmid_n.c to mpn/mulmid_n.c
+
+config.status: linking mpn/generic/mulmid.c to mpn/mulmid.c
+
+config.status: linking mpn/generic/random.c to mpn/random.c
+
+config.status: linking mpn/generic/random2.c to mpn/random2.c
+
+config.status: linking mpn/generic/pow_1.c to mpn/pow_1.c
+
+config.status: linking mpn/generic/rootrem.c to mpn/rootrem.c
+
+config.status: linking mpn/generic/sqrtrem.c to mpn/sqrtrem.c
+
+config.status: linking mpn/generic/sizeinbase.c to mpn/sizeinbase.c
+
+config.status: linking mpn/generic/get_str.c to mpn/get_str.c
+
+config.status: linking mpn/generic/set_str.c to mpn/set_str.c
+
+config.status: linking mpn/generic/compute_powtab.c to mpn/compute_powtab.c
+
+config.status: linking mpn/generic/scan0.c to mpn/scan0.c
+
+config.status: linking mpn/generic/scan1.c to mpn/scan1.c
+
+config.status: linking mpn/arm64/popcount.asm to mpn/popcount.asm
+
+config.status: linking mpn/arm64/hamdist.asm to mpn/hamdist.asm
+
+config.status: linking mpn/generic/cmp.c to mpn/cmp.c
+
+config.status: linking mpn/generic/zero_p.c to mpn/zero_p.c
+
+config.status: linking mpn/generic/perfsqr.c to mpn/perfsqr.c
+
+config.status: linking mpn/generic/perfpow.c to mpn/perfpow.c
+
+config.status: linking mpn/generic/strongfibo.c to mpn/strongfibo.c
+
+config.status: linking mpn/arm64/gcd_11.asm to mpn/gcd_11.asm
+
+config.status: linking mpn/arm64/gcd_22.asm to mpn/gcd_22.asm
+
+config.status: linking mpn/generic/gcd_1.c to mpn/gcd_1.c
+
+config.status: linking mpn/generic/gcd.c to mpn/gcd.c
+
+config.status: linking mpn/generic/gcdext_1.c to mpn/gcdext_1.c
+
+config.status: linking mpn/generic/gcdext.c to mpn/gcdext.c
+
+config.status: linking mpn/generic/gcd_subdiv_step.c to mpn/gcd_subdiv_step.c
+
+config.status: linking mpn/generic/gcdext_lehmer.c to mpn/gcdext_lehmer.c
+
+config.status: linking mpn/generic/div_q.c to mpn/div_q.c
+
+config.status: linking mpn/generic/tdiv_qr.c to mpn/tdiv_qr.c
+
+config.status: linking mpn/generic/jacbase.c to mpn/jacbase.c
+
+config.status: linking mpn/generic/jacobi_2.c to mpn/jacobi_2.c
+
+config.status: linking mpn/generic/jacobi.c to mpn/jacobi.c
+
+config.status: linking mpn/generic/get_d.c to mpn/get_d.c
+
+config.status: linking mpn/generic/matrix22_mul.c to mpn/matrix22_mul.c
+
+config.status: linking mpn/generic/matrix22_mul1_inverse_vector.c to mpn/matrix22_mul1_inverse_vector.c
+
+config.status: linking mpn/generic/hgcd_matrix.c to mpn/hgcd_matrix.c
+
+config.status: linking mpn/generic/hgcd2.c to mpn/hgcd2.c
+
+config.status: linking mpn/generic/hgcd_step.c to mpn/hgcd_step.c
+
+config.status: linking mpn/generic/hgcd_reduce.c to mpn/hgcd_reduce.c
+
+config.status: linking mpn/generic/hgcd.c to mpn/hgcd.c
+
+config.status: linking mpn/generic/hgcd_appr.c to mpn/hgcd_appr.c
+
+config.status: linking mpn/generic/hgcd2_jacobi.c to mpn/hgcd2_jacobi.c
+
+config.status: linking mpn/generic/hgcd_jacobi.c to mpn/hgcd_jacobi.c
+
+config.status: linking mpn/generic/mullo_n.c to mpn/mullo_n.c
+
+config.status: linking mpn/generic/mullo_basecase.c to mpn/mullo_basecase.c
+
+config.status: linking mpn/generic/sqrlo.c to mpn/sqrlo.c
+
+config.status: linking mpn/generic/sqrlo_basecase.c to mpn/sqrlo_basecase.c
+
+config.status: linking mpn/generic/toom22_mul.c to mpn/toom22_mul.c
+
+config.status: linking mpn/generic/toom32_mul.c to mpn/toom32_mul.c
+
+config.status: linking mpn/generic/toom42_mul.c to mpn/toom42_mul.c
+
+config.status: linking mpn/generic/toom52_mul.c to mpn/toom52_mul.c
+
+config.status: linking mpn/generic/toom62_mul.c to mpn/toom62_mul.c
+
+config.status: linking mpn/generic/toom33_mul.c to mpn/toom33_mul.c
+
+config.status: linking mpn/generic/toom43_mul.c to mpn/toom43_mul.c
+
+config.status: linking mpn/generic/toom53_mul.c to mpn/toom53_mul.c
+
+config.status: linking mpn/generic/toom54_mul.c to mpn/toom54_mul.c
+
+config.status: linking mpn/generic/toom63_mul.c to mpn/toom63_mul.c
+
+config.status: linking mpn/generic/toom44_mul.c to mpn/toom44_mul.c
+
+config.status: linking mpn/generic/toom6h_mul.c to mpn/toom6h_mul.c
+
+config.status: linking mpn/generic/toom6_sqr.c to mpn/toom6_sqr.c
+
+config.status: linking mpn/generic/toom8h_mul.c to mpn/toom8h_mul.c
+
+config.status: linking mpn/generic/toom8_sqr.c to mpn/toom8_sqr.c
+
+config.status: linking mpn/generic/toom_couple_handling.c to mpn/toom_couple_handling.c
+
+config.status: linking mpn/generic/toom2_sqr.c to mpn/toom2_sqr.c
+
+config.status: linking mpn/generic/toom3_sqr.c to mpn/toom3_sqr.c
+
+config.status: linking mpn/generic/toom4_sqr.c to mpn/toom4_sqr.c
+
+config.status: linking mpn/generic/toom_eval_dgr3_pm1.c to mpn/toom_eval_dgr3_pm1.c
+
+config.status: linking mpn/generic/toom_eval_dgr3_pm2.c to mpn/toom_eval_dgr3_pm2.c
+
+config.status: linking mpn/generic/toom_eval_pm1.c to mpn/toom_eval_pm1.c
+
+config.status: linking mpn/generic/toom_eval_pm2.c to mpn/toom_eval_pm2.c
+
+config.status: linking mpn/generic/toom_eval_pm2exp.c to mpn/toom_eval_pm2exp.c
+
+config.status: linking mpn/generic/toom_eval_pm2rexp.c to mpn/toom_eval_pm2rexp.c
+
+config.status: linking mpn/generic/toom_interpolate_5pts.c to mpn/toom_interpolate_5pts.c
+
+config.status: linking mpn/generic/toom_interpolate_6pts.c to mpn/toom_interpolate_6pts.c
+
+config.status: linking mpn/generic/toom_interpolate_7pts.c to mpn/toom_interpolate_7pts.c
+
+config.status: linking mpn/generic/toom_interpolate_8pts.c to mpn/toom_interpolate_8pts.c
+
+config.status: linking mpn/generic/toom_interpolate_12pts.c to mpn/toom_interpolate_12pts.c
+
+config.status: linking mpn/generic/toom_interpolate_16pts.c to mpn/toom_interpolate_16pts.c
+
+config.status: linking mpn/generic/invertappr.c to mpn/invertappr.c
+
+config.status: linking mpn/generic/invert.c to mpn/invert.c
+
+config.status: linking mpn/generic/binvert.c to mpn/binvert.c
+
+config.status: linking mpn/generic/mulmod_bnm1.c to mpn/mulmod_bnm1.c
+
+config.status: linking mpn/generic/sqrmod_bnm1.c to mpn/sqrmod_bnm1.c
+
+config.status: linking mpn/generic/div_qr_1.c to mpn/div_qr_1.c
+
+config.status: linking mpn/generic/div_qr_1n_pi1.c to mpn/div_qr_1n_pi1.c
+
+config.status: linking mpn/generic/div_qr_2.c to mpn/div_qr_2.c
+
+config.status: linking mpn/generic/div_qr_2n_pi1.c to mpn/div_qr_2n_pi1.c
+
+config.status: linking mpn/generic/div_qr_2u_pi1.c to mpn/div_qr_2u_pi1.c
+
+config.status: linking mpn/generic/sbpi1_div_q.c to mpn/sbpi1_div_q.c
+
+config.status: linking mpn/generic/sbpi1_div_qr.c to mpn/sbpi1_div_qr.c
+
+config.status: linking mpn/generic/sbpi1_divappr_q.c to mpn/sbpi1_divappr_q.c
+
+config.status: linking mpn/generic/dcpi1_div_q.c to mpn/dcpi1_div_q.c
+
+config.status: linking mpn/generic/dcpi1_div_qr.c to mpn/dcpi1_div_qr.c
+
+config.status: linking mpn/generic/dcpi1_divappr_q.c to mpn/dcpi1_divappr_q.c
+
+config.status: linking mpn/generic/mu_div_qr.c to mpn/mu_div_qr.c
+
+config.status: linking mpn/generic/mu_divappr_q.c to mpn/mu_divappr_q.c
+
+config.status: linking mpn/generic/mu_div_q.c to mpn/mu_div_q.c
+
+config.status: linking mpn/arm64/bdiv_q_1.asm to mpn/bdiv_q_1.asm
+
+config.status: linking mpn/generic/sbpi1_bdiv_q.c to mpn/sbpi1_bdiv_q.c
+
+config.status: linking mpn/generic/sbpi1_bdiv_qr.c to mpn/sbpi1_bdiv_qr.c
+
+config.status: linking mpn/generic/sbpi1_bdiv_r.c to mpn/sbpi1_bdiv_r.c
+
+config.status: linking mpn/generic/dcpi1_bdiv_q.c to mpn/dcpi1_bdiv_q.c
+
+config.status: linking mpn/generic/dcpi1_bdiv_qr.c to mpn/dcpi1_bdiv_qr.c
+
+config.status: linking mpn/generic/mu_bdiv_q.c to mpn/mu_bdiv_q.c
+
+config.status: linking mpn/generic/mu_bdiv_qr.c to mpn/mu_bdiv_qr.c
+
+config.status: linking mpn/generic/bdiv_q.c to mpn/bdiv_q.c
+
+config.status: linking mpn/generic/bdiv_qr.c to mpn/bdiv_qr.c
+
+config.status: linking mpn/generic/broot.c to mpn/broot.c
+
+config.status: linking mpn/generic/brootinv.c to mpn/brootinv.c
+
+config.status: linking mpn/generic/bsqrt.c to mpn/bsqrt.c
+
+config.status: linking mpn/generic/bsqrtinv.c to mpn/bsqrtinv.c
+
+config.status: linking mpn/generic/divexact.c to mpn/divexact.c
+
+config.status: linking mpn/arm64/bdiv_dbm1c.asm to mpn/bdiv_dbm1c.asm
+
+config.status: linking mpn/generic/redc_1.c to mpn/redc_1.c
+
+config.status: linking mpn/generic/redc_2.c to mpn/redc_2.c
+
+config.status: linking mpn/generic/redc_n.c to mpn/redc_n.c
+
+config.status: linking mpn/generic/powm.c to mpn/powm.c
+
+config.status: linking mpn/generic/powlo.c to mpn/powlo.c
+
+config.status: linking mpn/generic/sec_powm.c to mpn/sec_powm.c
+
+config.status: linking mpn/generic/sec_mul.c to mpn/sec_mul.c
+
+config.status: linking mpn/generic/sec_sqr.c to mpn/sec_sqr.c
+
+config.status: linking mpn/generic/sec_div.c to mpn/sec_div_qr.c
+
+config.status: linking mpn/generic/sec_div.c to mpn/sec_div_r.c
+
+config.status: linking mpn/generic/sec_pi1_div.c to mpn/sec_pi1_div_qr.c
+
+config.status: linking mpn/generic/sec_pi1_div.c to mpn/sec_pi1_div_r.c
+
+config.status: linking mpn/generic/sec_aors_1.c to mpn/sec_add_1.c
+
+config.status: linking mpn/generic/sec_aors_1.c to mpn/sec_sub_1.c
+
+config.status: linking mpn/generic/sec_invert.c to mpn/sec_invert.c
+
+config.status: linking mpn/generic/trialdiv.c to mpn/trialdiv.c
+
+config.status: linking mpn/generic/remove.c to mpn/remove.c
+
+config.status: linking mpn/arm64/logops_n.asm to mpn/and_n.asm
+
+config.status: linking mpn/arm64/logops_n.asm to mpn/andn_n.asm
+
+config.status: linking mpn/arm64/logops_n.asm to mpn/nand_n.asm
+
+config.status: linking mpn/arm64/logops_n.asm to mpn/ior_n.asm
+
+config.status: linking mpn/arm64/logops_n.asm to mpn/iorn_n.asm
+
+config.status: linking mpn/arm64/logops_n.asm to mpn/nior_n.asm
+
+config.status: linking mpn/arm64/logops_n.asm to mpn/xor_n.asm
+
+config.status: linking mpn/arm64/logops_n.asm to mpn/xnor_n.asm
+
+config.status: linking mpn/arm64/copyi.asm to mpn/copyi.asm
+
+config.status: linking mpn/arm64/copyd.asm to mpn/copyd.asm
+
+config.status: linking mpn/generic/zero.c to mpn/zero.c
+
+config.status: linking mpn/arm64/sec_tabselect.asm to mpn/sec_tabselect.asm
+
+config.status: linking mpn/generic/comb_tables.c to mpn/comb_tables.c
+
+config.status: linking mpn/arm64/invert_limb.asm to mpn/invert_limb.asm
+
+config.status: linking mpn/arm64/sqr_diag_addlsh1.asm to mpn/sqr_diag_addlsh1.asm
+
+config.status: linking mpn/arm64/aorsorrlsh1_n.asm to mpn/addlsh1_n.asm
+
+config.status: linking mpn/arm64/aorsorrlsh1_n.asm to mpn/sublsh1_n.asm
+
+config.status: linking mpn/arm64/aorsorrlsh1_n.asm to mpn/rsblsh1_n.asm
+
+config.status: linking mpn/arm64/rsh1aors_n.asm to mpn/rsh1add_n.asm
+
+config.status: linking mpn/arm64/rsh1aors_n.asm to mpn/rsh1sub_n.asm
+
+config.status: linking mpn/arm64/aorsorrlsh2_n.asm to mpn/addlsh2_n.asm
+
+config.status: linking mpn/arm64/aorsorrlsh2_n.asm to mpn/sublsh2_n.asm
+
+config.status: linking mpn/arm64/aorsorrlsh2_n.asm to mpn/rsblsh2_n.asm
+
+config.status: linking mpn/generic/add_n_sub_n.c to mpn/add_n_sub_n.c
+
+config.status: linking mpn/arm64/gmp-mparam.h to gmp-mparam.h
+
+config.status: executing libtool commands
+
+configure: summary of build options:
+
+  Version:           GNU MP 6.2.1
+  Host type:         aarch64-unknown-linux-android
+  ABI:               64
+  Install prefix:    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/gmp/install/android/arm64-v8a
+  Compiler:          /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang
+  Static libraries:  yes
+  Shared libraries:  yes
+
+
+$ make clean
+
+Making clean in tests
+
+Making clean in .
+
+test -z "libtests.la" || rm -f libtests.la
+
+rm -f ./so_locations
+
+ rm -f t-bswap t-constants t-count_zeros t-hightomask t-modlinv t-popc t-parity t-sub
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-bswap.log t-constants.log t-count_zeros.log t-hightomask.log t-modlinv.log t-popc.log t-parity.log t-sub.log" || rm -f t-bswap.log t-constants.log t-count_zeros.log t-hightomask.log t-modlinv.log t-popc.log t-parity.log t-sub.log
+
+test -z "t-bswap.trs t-constants.trs t-count_zeros.trs t-hightomask.trs t-modlinv.trs t-popc.trs t-parity.trs t-sub.trs" || rm -f t-bswap.trs t-constants.trs t-count_zeros.trs t-hightomask.trs t-modlinv.trs t-popc.trs t-parity.trs t-sub.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in devel
+
+test -z "sqrtrem_1_2 primes try test-add_ssaaaa test-sub_ddmmss test-add_ssaaaa.c test-sub_ddmmss.c gen-test-longlong_h" || rm -f sqrtrem_1_2 primes try test-add_ssaaaa test-sub_ddmmss test-add_ssaaaa.c test-sub_ddmmss.c gen-test-longlong_h
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in mpn
+
+ rm -f t-asmtype t-aors_1 t-divrem_1 t-mod_1 t-fat t-get_d t-instrument t-iord_u t-mp_bases t-perfsqr t-scan logic t-toom22 t-toom32 t-toom33 t-toom42 t-toom43 t-toom44 t-toom52 t-toom53 t-toom54 t-toom62 t-toom63 t-toom6h t-toom8h t-toom2-sqr t-toom3-sqr t-toom4-sqr t-toom6-sqr t-toom8-sqr t-div t-mul t-mullo t-sqrlo t-mulmod_bnm1 t-sqrmod_bnm1 t-mulmid t-hgcd t-hgcd_appr t-matrix22 t-invert t-bdiv t-fib2m t-broot t-brootinv t-minvert t-sizeinbase t-gcd_11 t-gcd_22 t-gcdext_1
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-asmtype.log t-aors_1.log t-divrem_1.log t-mod_1.log t-fat.log t-get_d.log t-instrument.log t-iord_u.log t-mp_bases.log t-perfsqr.log t-scan.log logic.log t-toom22.log t-toom32.log t-toom33.log t-toom42.log t-toom43.log t-toom44.log t-toom52.log t-toom53.log t-toom54.log t-toom62.log t-toom63.log t-toom6h.log t-toom8h.log t-toom2-sqr.log t-toom3-sqr.log t-toom4-sqr.log t-toom6-sqr.log t-toom8-sqr.log t-div.log t-mul.log t-mullo.log t-sqrlo.log t-mulmod_bnm1.log t-sqrmod_bnm1.log t-mulmid.log t-hgcd.log t-hgcd_appr.log t-matrix22.log t-invert.log t-bdiv.log t-fib2m.log t-broot.log t-brootinv.log t-minvert.log t-sizeinbase.log t-gcd_11.log t-gcd_22.log t-gcdext_1.log" || rm -f t-asmtype.log t-aors_1.log t-divrem_1.log t-mod_1.log t-fat.log t-get_d.log t-instrument.log t-iord_u.log t-mp_bases.log t-perfsqr.log t-scan.log logic.log t-toom22.log t-toom32.log t-toom33.log t-toom42.log t-toom43.log t-toom44.log t-toom52.log t-toom53.log t-toom54.log t-toom62.log t-toom63.log t-toom6h.log t-toom8h.log t-toom2-sqr.log t-toom3-sqr.log t-toom4-sqr.log t-toom6-sqr.log t-toom8-sqr.log t-div.log t-mul.log t-mullo.log t-sqrlo.log t-mulmod_bnm1.log t-sqrmod_bnm1.log t-mulmid.log t-hgcd.log t-hgcd_appr.log t-matrix22.log t-invert.log t-bdiv.log t-fib2m.log t-broot.log t-brootinv.log t-minvert.log t-sizeinbase.log t-gcd_11.log t-gcd_22.log t-gcdext_1.log
+
+test -z "t-asmtype.trs t-aors_1.trs t-divrem_1.trs t-mod_1.trs t-fat.trs t-get_d.trs t-instrument.trs t-iord_u.trs t-mp_bases.trs t-perfsqr.trs t-scan.trs logic.trs t-toom22.trs t-toom32.trs t-toom33.trs t-toom42.trs t-toom43.trs t-toom44.trs t-toom52.trs t-toom53.trs t-toom54.trs t-toom62.trs t-toom63.trs t-toom6h.trs t-toom8h.trs t-toom2-sqr.trs t-toom3-sqr.trs t-toom4-sqr.trs t-toom6-sqr.trs t-toom8-sqr.trs t-div.trs t-mul.trs t-mullo.trs t-sqrlo.trs t-mulmod_bnm1.trs t-sqrmod_bnm1.trs t-mulmid.trs t-hgcd.trs t-hgcd_appr.trs t-matrix22.trs t-invert.trs t-bdiv.trs t-fib2m.trs t-broot.trs t-brootinv.trs t-minvert.trs t-sizeinbase.trs t-gcd_11.trs t-gcd_22.trs t-gcdext_1.trs" || rm -f t-asmtype.trs t-aors_1.trs t-divrem_1.trs t-mod_1.trs t-fat.trs t-get_d.trs t-instrument.trs t-iord_u.trs t-mp_bases.trs t-perfsqr.trs t-scan.trs logic.trs t-toom22.trs t-toom32.trs t-toom33.trs t-toom42.trs t-toom43.trs t-toom44.trs t-toom52.trs t-toom53.trs t-toom54.trs t-toom62.trs t-toom63.trs t-toom6h.trs t-toom8h.trs t-toom2-sqr.trs t-toom3-sqr.trs t-toom4-sqr.trs t-toom6-sqr.trs t-toom8-sqr.trs t-div.trs t-mul.trs t-mullo.trs t-sqrlo.trs t-mulmod_bnm1.trs t-sqrmod_bnm1.trs t-mulmid.trs t-hgcd.trs t-hgcd_appr.trs t-matrix22.trs t-invert.trs t-bdiv.trs t-fib2m.trs t-broot.trs t-brootinv.trs t-minvert.trs t-sizeinbase.trs t-gcd_11.trs t-gcd_22.trs t-gcdext_1.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in mpz
+
+ rm -f reuse t-addsub t-cmp t-mul t-mul_i t-tdiv t-tdiv_ui t-fdiv t-fdiv_ui t-cdiv_ui t-gcd t-gcd_ui t-lcm t-invert dive dive_ui t-sqrtrem convert io t-inp_str logic t-bit t-powm t-powm_ui t-pow t-div_2exp t-root t-perfsqr t-perfpow t-jac t-bin t-get_d t-get_d_2exp t-get_si t-set_d t-set_si t-lucm t-fac_ui t-mfac_uiui t-primorial_ui t-fib_ui t-lucnum_ui t-scan t-fits t-divis t-divis_2exp t-cong t-cong_2exp t-sizeinbase t-set_str t-aorsmul t-cmp_d t-cmp_si t-hamdist t-oddeven t-popcount t-set_f t-io_raw t-import t-export t-pprime_p t-nextprime t-remove t-limbs
+
+test -z "*.tmp" || rm -f *.tmp
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "reuse.log t-addsub.log t-cmp.log t-mul.log t-mul_i.log t-tdiv.log t-tdiv_ui.log t-fdiv.log t-fdiv_ui.log t-cdiv_ui.log t-gcd.log t-gcd_ui.log t-lcm.log t-invert.log dive.log dive_ui.log t-sqrtrem.log convert.log io.log t-inp_str.log logic.log t-bit.log t-powm.log t-powm_ui.log t-pow.log t-div_2exp.log t-root.log t-perfsqr.log t-perfpow.log t-jac.log t-bin.log t-get_d.log t-get_d_2exp.log t-get_si.log t-set_d.log t-set_si.log t-lucm.log t-fac_ui.log t-mfac_uiui.log t-primorial_ui.log t-fib_ui.log t-lucnum_ui.log t-scan.log t-fits.log t-divis.log t-divis_2exp.log t-cong.log t-cong_2exp.log t-sizeinbase.log t-set_str.log t-aorsmul.log t-cmp_d.log t-cmp_si.log t-hamdist.log t-oddeven.log t-popcount.log t-set_f.log t-io_raw.log t-import.log t-export.log t-pprime_p.log t-nextprime.log t-remove.log t-limbs.log" || rm -f reuse.log t-addsub.log t-cmp.log t-mul.log t-mul_i.log t-tdiv.log t-tdiv_ui.log t-fdiv.log t-fdiv_ui.log t-cdiv_ui.log t-gcd.log t-gcd_ui.log t-lcm.log t-invert.log dive.log dive_ui.log t-sqrtrem.log convert.log io.log t-inp_str.log logic.log t-bit.log t-powm.log t-powm_ui.log t-pow.log t-div_2exp.log t-root.log t-perfsqr.log t-perfpow.log t-jac.log t-bin.log t-get_d.log t-get_d_2exp.log t-get_si.log t-set_d.log t-set_si.log t-lucm.log t-fac_ui.log t-mfac_uiui.log t-primorial_ui.log t-fib_ui.log t-lucnum_ui.log t-scan.log t-fits.log t-divis.log t-divis_2exp.log t-cong.log t-cong_2exp.log t-sizeinbase.log t-set_str.log t-aorsmul.log t-cmp_d.log t-cmp_si.log t-hamdist.log t-oddeven.log t-popcount.log t-set_f.log t-io_raw.log t-import.log t-export.log t-pprime_p.log t-nextprime.log t-remove.log t-limbs.log
+
+test -z "reuse.trs t-addsub.trs t-cmp.trs t-mul.trs t-mul_i.trs t-tdiv.trs t-tdiv_ui.trs t-fdiv.trs t-fdiv_ui.trs t-cdiv_ui.trs t-gcd.trs t-gcd_ui.trs t-lcm.trs t-invert.trs dive.trs dive_ui.trs t-sqrtrem.trs convert.trs io.trs t-inp_str.trs logic.trs t-bit.trs t-powm.trs t-powm_ui.trs t-pow.trs t-div_2exp.trs t-root.trs t-perfsqr.trs t-perfpow.trs t-jac.trs t-bin.trs t-get_d.trs t-get_d_2exp.trs t-get_si.trs t-set_d.trs t-set_si.trs t-lucm.trs t-fac_ui.trs t-mfac_uiui.trs t-primorial_ui.trs t-fib_ui.trs t-lucnum_ui.trs t-scan.trs t-fits.trs t-divis.trs t-divis_2exp.trs t-cong.trs t-cong_2exp.trs t-sizeinbase.trs t-set_str.trs t-aorsmul.trs t-cmp_d.trs t-cmp_si.trs t-hamdist.trs t-oddeven.trs t-popcount.trs t-set_f.trs t-io_raw.trs t-import.trs t-export.trs t-pprime_p.trs t-nextprime.trs t-remove.trs t-limbs.trs" || rm -f reuse.trs t-addsub.trs t-cmp.trs t-mul.trs t-mul_i.trs t-tdiv.trs t-tdiv_ui.trs t-fdiv.trs t-fdiv_ui.trs t-cdiv_ui.trs t-gcd.trs t-gcd_ui.trs t-lcm.trs t-invert.trs dive.trs dive_ui.trs t-sqrtrem.trs convert.trs io.trs t-inp_str.trs logic.trs t-bit.trs t-powm.trs t-powm_ui.trs t-pow.trs t-div_2exp.trs t-root.trs t-perfsqr.trs t-perfpow.trs t-jac.trs t-bin.trs t-get_d.trs t-get_d_2exp.trs t-get_si.trs t-set_d.trs t-set_si.trs t-lucm.trs t-fac_ui.trs t-mfac_uiui.trs t-primorial_ui.trs t-fib_ui.trs t-lucnum_ui.trs t-scan.trs t-fits.trs t-divis.trs t-divis_2exp.trs t-cong.trs t-cong_2exp.trs t-sizeinbase.trs t-set_str.trs t-aorsmul.trs t-cmp_d.trs t-cmp_si.trs t-hamdist.trs t-oddeven.trs t-popcount.trs t-set_f.trs t-io_raw.trs t-import.trs t-export.trs t-pprime_p.trs t-nextprime.trs t-remove.trs t-limbs.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in mpq
+
+ rm -f t-aors t-cmp t-cmp_ui t-cmp_si t-equal t-get_d t-get_str t-inp_str t-inv t-md_2exp t-set_f t-set_str io reuse t-cmp_z
+
+test -z "*.tmp" || rm -f *.tmp
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-aors.log t-cmp.log t-cmp_ui.log t-cmp_si.log t-equal.log t-get_d.log t-get_str.log t-inp_str.log t-inv.log t-md_2exp.log t-set_f.log t-set_str.log io.log reuse.log t-cmp_z.log" || rm -f t-aors.log t-cmp.log t-cmp_ui.log t-cmp_si.log t-equal.log t-get_d.log t-get_str.log t-inp_str.log t-inv.log t-md_2exp.log t-set_f.log t-set_str.log io.log reuse.log t-cmp_z.log
+
+test -z "t-aors.trs t-cmp.trs t-cmp_ui.trs t-cmp_si.trs t-equal.trs t-get_d.trs t-get_str.trs t-inp_str.trs t-inv.trs t-md_2exp.trs t-set_f.trs t-set_str.trs io.trs reuse.trs t-cmp_z.trs" || rm -f t-aors.trs t-cmp.trs t-cmp_ui.trs t-cmp_si.trs t-equal.trs t-get_d.trs t-get_str.trs t-inp_str.trs t-inv.trs t-md_2exp.trs t-set_f.trs t-set_str.trs io.trs reuse.trs t-cmp_z.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in mpf
+
+ rm -f t-dm2exp t-conv t-add t-sub t-sqrt t-sqrt_ui t-muldiv reuse t-cmp_d t-cmp_si t-div t-fits t-get_d t-get_d_2exp t-get_si t-get_ui t-gsprec t-inp_str t-int_p t-mul_ui t-set t-set_q t-set_si t-set_ui t-trunc t-ui_div t-eq t-pow_ui
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-dm2exp.log t-conv.log t-add.log t-sub.log t-sqrt.log t-sqrt_ui.log t-muldiv.log reuse.log t-cmp_d.log t-cmp_si.log t-div.log t-fits.log t-get_d.log t-get_d_2exp.log t-get_si.log t-get_ui.log t-gsprec.log t-inp_str.log t-int_p.log t-mul_ui.log t-set.log t-set_q.log t-set_si.log t-set_ui.log t-trunc.log t-ui_div.log t-eq.log t-pow_ui.log" || rm -f t-dm2exp.log t-conv.log t-add.log t-sub.log t-sqrt.log t-sqrt_ui.log t-muldiv.log reuse.log t-cmp_d.log t-cmp_si.log t-div.log t-fits.log t-get_d.log t-get_d_2exp.log t-get_si.log t-get_ui.log t-gsprec.log t-inp_str.log t-int_p.log t-mul_ui.log t-set.log t-set_q.log t-set_si.log t-set_ui.log t-trunc.log t-ui_div.log t-eq.log t-pow_ui.log
+
+test -z "t-dm2exp.trs t-conv.trs t-add.trs t-sub.trs t-sqrt.trs t-sqrt_ui.trs t-muldiv.trs reuse.trs t-cmp_d.trs t-cmp_si.trs t-div.trs t-fits.trs t-get_d.trs t-get_d_2exp.trs t-get_si.trs t-get_ui.trs t-gsprec.trs t-inp_str.trs t-int_p.trs t-mul_ui.trs t-set.trs t-set_q.trs t-set_si.trs t-set_ui.trs t-trunc.trs t-ui_div.trs t-eq.trs t-pow_ui.trs" || rm -f t-dm2exp.trs t-conv.trs t-add.trs t-sub.trs t-sqrt.trs t-sqrt_ui.trs t-muldiv.trs reuse.trs t-cmp_d.trs t-cmp_si.trs t-div.trs t-fits.trs t-get_d.trs t-get_d_2exp.trs t-get_si.trs t-get_ui.trs t-gsprec.trs t-inp_str.trs t-int_p.trs t-mul_ui.trs t-set.trs t-set_q.trs t-set_si.trs t-set_ui.trs t-trunc.trs t-ui_div.trs t-eq.trs t-pow_ui.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in rand
+
+ rm -f t-iset t-lc2exp t-mt t-rand t-urbui t-urmui t-urndmm
+
+test -z "findlc gen gen.static spect stat libstat.la" || rm -f findlc gen gen.static spect stat libstat.la
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-iset.log t-lc2exp.log t-mt.log t-rand.log t-urbui.log t-urmui.log t-urndmm.log" || rm -f t-iset.log t-lc2exp.log t-mt.log t-rand.log t-urbui.log t-urmui.log t-urndmm.log
+
+test -z "t-iset.trs t-lc2exp.trs t-mt.trs t-rand.trs t-urbui.trs t-urmui.trs t-urndmm.trs" || rm -f t-iset.trs t-lc2exp.trs t-mt.trs t-rand.trs t-urbui.trs t-urmui.trs t-urndmm.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in misc
+
+ rm -f t-printf t-scanf t-locale
+
+test -z "*.tmp" || rm -f *.tmp
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "t-printf.log t-scanf.log t-locale.log" || rm -f t-printf.log t-scanf.log t-locale.log
+
+test -z "t-printf.trs t-scanf.trs t-locale.trs" || rm -f t-printf.trs t-scanf.trs t-locale.trs
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in cxx
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+test -z "" || rm -f 
+
+test -z "" || rm -f 
+
+test -z "test-suite.log" || rm -f test-suite.log
+
+rm -f *.lo
+
+Making clean in mpn
+
+rm -rf .libs _libs
+
+test -z "libmpn.la" || rm -f libmpn.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in mpz
+
+rm -rf .libs _libs
+
+test -z "libmpz.la" || rm -f libmpz.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in mpq
+
+rm -rf .libs _libs
+
+test -z "libmpq.la" || rm -f libmpq.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in mpf
+
+rm -rf .libs _libs
+
+test -z "libmpf.la" || rm -f libmpf.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in printf
+
+rm -rf .libs _libs
+
+test -z "libprintf.la" || rm -f libprintf.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in scanf
+
+rm -rf .libs _libs
+
+test -z "libscanf.la" || rm -f libscanf.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in rand
+
+rm -rf .libs _libs
+
+test -z "librandom.la" || rm -f librandom.la
+
+rm -f ./so_locations
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in cxx
+
+rm -rf .libs _libs
+
+test -z "" || rm -f 
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in demos
+
+Making clean in calc
+
+test -z "calc" || rm -f calc
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in expr
+
+test -z "run-expr t-expr libexpr.a" || rm -f run-expr t-expr libexpr.a
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+test -z "factorize isprime pexpr primes qcn" || rm -f factorize isprime pexpr primes qcn
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in tune
+
+test -z "speed speed-dynamic speed-ext tuneup tune-gcd-p libspeed.la div_qr_2.c bdiv_q.c bdiv_qr.c dcpi1_div_qr.c dcpi1_divappr_q.c dcpi1_bdiv_qr.c dcpi1_bdiv_q.c invertappr.c invert.c binvert.c divrem_2.c gcd.c gcdext.c get_str.c set_str.c matrix22_mul.c hgcd.c hgcd_appr.c hgcd_reduce.c mul_n.c sqr.c sec_powm.c mullo_n.c mul_fft.c mul.c tdiv_qr.c mulmod_bnm1.c sqrmod_bnm1.c mulmid.c mulmid_n.c toom42_mulmid.c sqrlo.c sqrlo_basecase.c nussbaumer_mul.c toom6h_mul.c toom8h_mul.c toom6_sqr.c toom8_sqr.c toom22_mul.c toom2_sqr.c toom33_mul.c toom3_sqr.c toom44_mul.c toom4_sqr.c divrem_1.c mod_1.c fac_ui.c sqr_asm.asm stg.gnuplot stg.data mtg.gnuplot mtg.data fibg.gnuplot fibg.data graph.gnuplot graph.data " || rm -f speed speed-dynamic speed-ext tuneup tune-gcd-p libspeed.la div_qr_2.c bdiv_q.c bdiv_qr.c dcpi1_div_qr.c dcpi1_divappr_q.c dcpi1_bdiv_qr.c dcpi1_bdiv_q.c invertappr.c invert.c binvert.c divrem_2.c gcd.c gcdext.c get_str.c set_str.c matrix22_mul.c hgcd.c hgcd_appr.c hgcd_reduce.c mul_n.c sqr.c sec_powm.c mullo_n.c mul_fft.c mul.c tdiv_qr.c mulmod_bnm1.c sqrmod_bnm1.c mulmid.c mulmid_n.c toom42_mulmid.c sqrlo.c sqrlo_basecase.c nussbaumer_mul.c toom6h_mul.c toom8h_mul.c toom6_sqr.c toom8_sqr.c toom22_mul.c toom2_sqr.c toom33_mul.c toom3_sqr.c toom44_mul.c toom4_sqr.c divrem_1.c mod_1.c fac_ui.c sqr_asm.asm stg.gnuplot stg.data mtg.gnuplot mtg.data fibg.gnuplot fibg.data graph.gnuplot graph.data 
+
+rm -rf .libs _libs
+
+rm -f *.o
+
+rm -f *.lo
+
+Making clean in doc
+
+test -z "gmp.dvi gmp.pdf gmp.ps gmp.html" \
+	|| rm -rf gmp.dvi gmp.pdf gmp.ps gmp.html
+
+rm -rf .libs _libs
+
+rm -rf gmp.t2d gmp.t2p
+
+rm -f *.lo
+
+rm -f vti.tmp* ./version.texi.tmp*
+
+test -z "libgmp.la " || rm -f libgmp.la 
+
+rm -f ./so_locations
+
+rm -rf .libs _libs
+
+rm -rf cxx/.libs cxx/_libs
+
+if [ -d mini-gmp/tests ] ; then \
+	  abs_srcdir="`cd . && pwd`" ; \
+	  cd mini-gmp/tests \
+	  && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f "$abs_srcdir/mini-gmp/tests/Makefile" clean ; \
+	fi
+
+rm -f *.o t-add t-sub t-mul t-invert t-div t-div_2exp t-double t-cmp_d t-gcd t-lcm t-import t-comb t-signed t-sqrt t-root t-powm t-logops t-bitops t-scan t-str t-reuse t-aorsmul t-limbs t-cong t-pprime_p t-lucm t-mpq_addsub t-mpq_muldiv t-mpq_muldiv_2exp t-mpq_str t-mpq_double
+
+rm -f *.o
+
+rm -f cxx/*.o
+
+rm -f cxx/*.lo
+
+rm -f *.lo
+
+$ make -j8
+
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  all-recursive
+
+Making all in tests
+
+Making all in .
+
+make[3]: Nothing to be done for `all-am'.
+
+Making all in devel
+
+make[3]: Nothing to be done for `all'.
+
+Making all in mpn
+
+make[3]: Nothing to be done for `all'.
+
+Making all in mpz
+
+make[3]: Nothing to be done for `all'.
+
+Making all in mpq
+
+make[3]: Nothing to be done for `all'.
+
+Making all in mpf
+
+make[3]: Nothing to be done for `all'.
+
+Making all in rand
+
+make[3]: Nothing to be done for `all'.
+
+Making all in misc
+
+make[3]: Nothing to be done for `all'.
+
+Making all in cxx
+
+make[3]: Nothing to be done for `all'.
+
+Making all in mpn
+
+/bin/sh ../libtool  --tag=CC   --mode=compile /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I..  -D__GMP_WITHIN_GMP -I.. -DOPERATION_`echo fib_table | sed 's/_$//'`   -fPIC -O2 -Wall -c -o fib_table.lo fib_table.c
+
+/bin/sh ../libtool  --tag=CC   --mode=compile /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I..  -D__GMP_WITHIN_GMP -I.. -DOPERATION_`echo mp_bases | sed 's/_$//'`   -fPIC -O2 -Wall -c -o mp_bases.lo mp_bases.c
+
+/bin/sh ../libtool  --tag=CC   --mode=compile /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I..  -D__GMP_WITHIN_GMP -I.. -DOPERATION_`echo add | sed 's/_$//'`   -fPIC -O2 -Wall -c -o add.lo add.c
+
+/bin/sh ../libtool  --tag=CC   --mode=compile /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I..  -D__GMP_WITHIN_GMP -I.. -DOPERATION_`echo add_1 | sed 's/_$//'`   -fPIC -O2 -Wall -c -o add_1.lo add_1.c
+
+/bin/sh ../libtool --mode=compile --tag=CC ../mpn/m4-ccas --m4="m4" /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -c -DHAVE_CONFIG_H -I. -I..  -D__GMP_WITHIN_GMP -I.. -DOPERATION_`echo add_n | sed 's/_$//'`   -fPIC -O2 -Wall -Wa,--noexecstack `test -f 'add_n.asm' || echo './'`add_n.asm
+
+/bin/sh ../libtool  --tag=CC   --mode=compile /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I..  -D__GMP_WITHIN_GMP -I.. -DOPERATION_`echo sub | sed 's/_$//'`   -fPIC -O2 -Wall -c -o sub.lo sub.c
+
+/bin/sh ../libtool  --tag=CC   --mode=compile /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I..  -D__GMP_WITHIN_GMP -I.. -DOPERATION_`echo sub_1 | sed 's/_$//'`   -fPIC -O2 -Wall -c -o sub_1.lo sub_1.c
+
+/bin/sh ../libtool --mode=compile --tag=CC ../mpn/m4-ccas --m4="m4" /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -c -DHAVE_CONFIG_H -I. -I..  -D__GMP_WITHIN_GMP -I.. -DOPERATION_`echo sub_n | sed 's/_$//'`   -fPIC -O2 -Wall -Wa,--noexecstack `test -f 'sub_n.asm' || echo './'`sub_n.asm
+
+libtool: compile:  /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_fib_table -fPIC -O2 -Wall -c fib_table.c  -fPIC -DPIC -o .libs/fib_table.o
+
+libtool: compile:  /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_add_1 -fPIC -O2 -Wall -c add_1.c  -fPIC -DPIC -o .libs/add_1.o
+libtool: compile:  /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_mp_bases -fPIC -O2 -Wall -c mp_bases.c  -fPIC -DPIC -o .libs/mp_bases.o
+libtool: compile:  /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_add -fPIC -O2 -Wall -c add.c  -fPIC -DPIC -o .libs/add.o
+
+libtool: compile:  /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_sub -fPIC -O2 -Wall -c sub.c  -fPIC -DPIC -o .libs/sub.o
+
+libtool: compile:  ../mpn/m4-ccas --m4=m4 /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -c -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_add_n -fPIC -O2 -Wall -Wa,--noexecstack add_n.asm  -fPIC -DPIC -o .libs/add_n.o
+
+libtool: compile:  /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_sub_1 -fPIC -O2 -Wall -c sub_1.c  -fPIC -DPIC -o .libs/sub_1.o
+
+libtool: compile:  ../mpn/m4-ccas --m4=m4 /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -c -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_sub_n -fPIC -O2 -Wall -Wa,--noexecstack sub_n.asm  -fPIC -DPIC -o .libs/sub_n.o
+
+m4  -DHAVE_CONFIG_H -D__GMP_WITHIN_GMP -DOPERATION_add_n -DPIC add_n.asm >tmp-add_n.s
+
+m4  -DHAVE_CONFIG_H -D__GMP_WITHIN_GMP -DOPERATION_sub_n -DPIC sub_n.asm >tmp-sub_n.s
+
+In file included from mp_bases.c:3:
+In file included from In file included from add.c:33:
+In file included from ../gmp-impl.h:147:
+../fib_table.h:4:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+../gmp-impl.h:Error, error, this data is for 32 bits
+^
+147:
+../fib_table.h:4:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+../fib_table.h:4:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+       ^
+Error, error, this data is for 32 bits
+^../fib_table.h:4:15
+
+../fib_table.h:4:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+       ^
+../fib_table.h:4:15: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+              ^
+In file included from add_1.c:33:
+In file included from ../gmp-impl.h:147:
+../fib_table.h:4:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+
+Error, error, this data is for 32 bits
+^
+../fib_table.h:4:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+       ^
+
+../fib_table.h:4:15: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+              ^
+
+../fib_table.h:4:19: error: expected ';' after top level declarator
+Error, error, this data is for 32 bits
+                  ^
+                  ;
+
+../fib_table.h:4:19: error: expected ';' after top level declarator
+Error, error, this data is for 32 bits
+
+                  ^
+                  ;
+
+:
+ warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+              ^
+
+../fib_table.h:4:19: error: expected ';' after top level declarator
+In file included from add_1.c:33:
+
+In file included from ../gmp-impl.h:156:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/inttypes.h:21:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/local/include/inttypes.h:31:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/inttypes.h:22:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdint.h:52:
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:58:9: error: unknown type name '__int8_t'; did you mean '__uint8_t'?
+
+typedef __int8_t      int8_t;
+        ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:37:23: note: '__uint8_t' declared here
+typedef unsigned char __uint8_t;
+
+                      ^
+
+In file included from mp_bases.c:3:
+In file included from ../gmp-impl.h:156:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/inttypes.h:21:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/local/include/inttypes.h:31:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/inttypes.h:22:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdint.h:52:
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:58:9: error: unknown type name '__int8_t'; did you mean '__uint8_t'?
+typedef __int8_t      int8_t;
+        ^
+
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:37:23: note: '__uint8_t' declared here
+typedef unsigned char __uint8_t;
+                      ^
+
+Error, error, this data is for 32 bits
+                  ^
+                  ;
+
+In file included from fib_table.c:4:
+In file included from ../gmp-impl.h:147:
+../fib_table.h:4:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+^
+
+../fib_table.h:4:8: 
+warning: 
+type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+       ^
+../fib_table.h:4:15: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+
+Error, error, this data is for 32 bits
+              ^
+
+../fib_table.hIn file included from sub.c:33:
+In file included from ../gmp-impl.h:147:
+../fib_table.h:4:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+:4:19: error: expected ';' after top level declarator
+Error, error, this data is for 32 bits
+^
+Error, error, this data is for 32 bits
+                  ^
+                  ;
+../fib_table.h:4:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+
+Error, error, this data is for 32 bits
+       ^
+../fib_table.h:4:15: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+              ^
+
+../fib_table.h:4:19: error: expected ';' after top level declarator
+Error, error, this data is for 32 bits
+                  ^
+                  ;
+
+3 warnings and 2 errors generated.
+
+In file included from fib_table.c:4:
+In file included from ../gmp-impl.h:156:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/inttypes.h:21:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/local/include/inttypes.h:31:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/inttypes.h:22:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdint.h:52:
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:58:9: error: unknown type name '__int8_t'; did you mean '__uint8_t'?
+typedef __int8_t      int8_t;
+        ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:37:23: note: '__uint8_t' declared here
+
+typedef unsigned char __uint8_t;
+                      ^
+
+In file included from sub.c:33:
+In file included from ../gmp-impl.h:156:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/inttypes.h:21:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/local/include/inttypes.h:31:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/inttypes.h:22:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdint.h:52:
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:58:9: error: unknown type name '__int8_t'; did you mean '__uint8_t'?
+typedef __int8_t      int8_t;
+        ^
+
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:37:23: note: '__uint8_t' declared here
+typedef unsigned char __uint8_t;
+                      ^
+
+In file included from add.c:33:
+In file included from ../gmp-impl.h:156:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/inttypes.h:21:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/local/include/inttypes.h:31:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/inttypes.h:22:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdint.h:52:
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:58:9: error: unknown type name '__int8_t'; did you mean '__uint8_t'?
+typedef __int8_t      int8_t;
+        ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:37:23: note: '__uint8_t' declared here
+typedef unsigned char __uint8_t;
+                      ^
+
+In file included from sub_1.c:33:
+In file included from ../gmp-impl.h:147:
+../fib_table.h:4:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+^
+
+../fib_table.h:4:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+       ^
+
+../fib_table.h:4:15: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+              ^
+
+../fib_table.h:4:19: error: expected ';' after top level declarator
+Error, error, this data is for 32 bits
+                  ^
+                  ;
+
+make[2]: *** [add_1.lo] Error 1
+make[2]: *** Waiting for unfinished jobs....
+
+In file included from 
+sub_1.c:33:
+In file included from ../gmp-impl.h:156:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/inttypes.h:21:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/local/include/inttypes.h:31:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/inttypes.h:22:
+In file included from /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdint.h:52:
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:58:9
+: error: unknown type name '__int8_t'; did you mean '__uint8_t'?
+typedef __int8_t      int8_t;
+        ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/../sysroot/usr/include/stdint.h:37:23: note: '__uint8_t' declared here
+typedef unsigned char __uint8_t;
+                      ^
+
+fib_table.c:7:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+^
+fib_table.c:7:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+       ^
+fib_table.c:7:15: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+              ^
+
+fib_table.c:7:19: error: expected ';' after top level declarator
+Error, error, this data is for 32 bits
+                  ^
+                  ;
+
+6 warnings and 3 errors generated.
+
+ /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -c -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_add_n -fPIC -O2 -Wall -Wa,--noexecstack tmp-add_n.s -fPIC -DPIC -o .libs/add_n.o
+
+mp_bases.c:6:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+^
+mp_bases.c:6:8: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+Error, error, this data is for 32 bits
+       ^
+mp_bases.c:6:15: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+
+Error, error, this data is for 32 bits
+              ^
+mp_bases.c:6:19: error: expected ';' after top level declarator
+Error, error, this data is for 32 bits
+                  ^
+                  ;
+
+3 warnings and 2 errors generated.
+
+3 warnings and 2 errors generated.
+
+make[2]: *** [fib_table.lo] Error 1
+
+ /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -c -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_sub_n -fPIC -O2 -Wall -Wa,--noexecstack tmp-sub_n.s -fPIC -DPIC -o .libs/sub_n.o
+
+make[2]: *** [sub.lo] Error 1
+
+6 warnings and 3 errors
+ generated.
+
+make[2]: *** [add.lo] Error 1
+3 warnings and 2 errors generated.
+
+make[2]: *** [mp_bases.lo] Error 1
+
+make[2]: *** [sub_1.lo] Error 1
+
+clang-14: warning: argument unused during compilation: '-D HAVE_CONFIG_H' [-Wunused-command-line-argument]
+clang-14: warning: argument unused during compilation: '-D __GMP_WITHIN_GMP' [-Wunused-command-line-argument]
+clang-14: warning: argument unused during compilation: '-D OPERATION_add_n' [-Wunused-command-line-argument]
+clang-14: warning: argument unused during compilation: '-D PIC' [-Wunused-command-line-argument]
+
+clang-14: warning: argument unused during compilation: '-D HAVE_CONFIG_H' [-Wunused-command-line-argument]
+clang-14: warning: argument unused during compilation: '-D __GMP_WITHIN_GMP' [-Wunused-command-line-argument]
+clang-14: warning: argument unused during compilation: '-D OPERATION_sub_n' [-Wunused-command-line-argument]
+clang-14: warning: argument unused during compilation: '-D PIC' [-Wunused-command-line-argument]
+
+libtool: compile:  ../mpn/m4-ccas --m4=m4 /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -c -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_add_n -fPIC -O2 -Wall -Wa,--noexecstack add_n.asm -o add_n.o >/dev/null 2>&1
+
+libtool: compile:  ../mpn/m4-ccas --m4=m4 /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/aarch64-linux-android21-clang -c -DHAVE_CONFIG_H -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_sub_n -fPIC -O2 -Wall -Wa,--noexecstack sub_n.asm -o sub_n.o >/dev/null 2>&1
+
+make[1]: *** [all-recursive] Error 1
+
+make: *** [all] Error 2
+
+$ /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/gmp/source/gmp/gmp-6.2.1/configure --help
+

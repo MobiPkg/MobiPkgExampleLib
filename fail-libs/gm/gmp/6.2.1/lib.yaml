@@ -1,0 +1,16 @@
+name: gmp
+homepage: https://gmplib.org/
+description: GNU multiple precision arithmetic library
+license-type: LGPL-3.0-or-later or GPL-2.0-or-later
+source:
+  subpath: gmp-6.2.1
+  http:
+    url: https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz
+    type: tar.xz
+    version: 6.2.1
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
