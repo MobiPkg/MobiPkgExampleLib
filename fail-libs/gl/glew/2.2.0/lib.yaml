@@ -1,0 +1,17 @@
+name: glew
+type: cmake
+homepage: https://glew.sourceforge.io/
+description: OpenGL Extension Wrangler Library
+license-type: BSD-3-Clause
+source:
+  subpath: glew-2.2.0/build/cmake
+  http:
+    url: https://downloads.sourceforge.net/project/glew/glew/2.2.0/glew-2.2.0.tgz
+    type: tar.gz
+    version: 2.2.0
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
