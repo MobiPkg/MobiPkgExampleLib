@@ -1,0 +1,17 @@
+name: snappy
+type: cmake
+homepage: https://google.github.io/snappy/
+description: Compression/decompression library aiming for high speed
+license-type: BSD-3-Clause
+source:
+  subpath: snappy-1.1.10
+  http:
+    url: https://github.com/google/snappy/archive/1.1.10.tar.gz
+    type: tar.gz
+    version: 1.1.10
+license: COPYING
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
