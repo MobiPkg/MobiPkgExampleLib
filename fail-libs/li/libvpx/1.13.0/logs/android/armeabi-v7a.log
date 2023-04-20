@@ -1,0 +1,7 @@
+$ ./configure --prefix=/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libvpx/install/android/armeabi-v7a --exec-prefix /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libvpx/install/android/armeabi-v7a --host arm-linux-androideabi
+
+Unknown option "--exec-prefix".
+See /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libvpx/source/libvpx/libvpx-1.13.0/configure --help for available options.
+
+$ /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libvpx/source/libvpx/libvpx-1.13.0/configure --help
+
