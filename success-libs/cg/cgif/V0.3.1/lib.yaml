@@ -1,0 +1,16 @@
+name: cgif
+type: meson
+homepage: https://github.com/dloebl/cgif
+description: GIF encoder written in C
+license-type: MIT
+source:
+  subpath: .
+  git:
+    url: https://github.com/dloebl/cgif.git
+    ref: V0.3.1
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
