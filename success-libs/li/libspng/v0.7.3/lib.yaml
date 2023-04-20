@@ -1,0 +1,17 @@
+name: libspng
+# type: cmake
+# type: meson
+homepage: https://libspng.org/
+description: C library for reading and writing PNG format files
+license-type: BSD-2-Clause
+source:
+  subpath: .
+  git:
+    url: https://github.com/randy408/libspng.git
+    ref: v0.7.3
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
