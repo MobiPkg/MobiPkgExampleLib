@@ -1,0 +1,445 @@
+$ cmake -DANDROID_NATIVE_API_LEVEL=21 -DANDROID_ABI=armeabi-v7a -DCMAKE_TOOLCHAIN_FILE=/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake -DCMAKE_INSTALL_PREFIX=/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a -DCMAKE_BUILD_TYPE=Release "-DCMAKE_C_FLAGS_RELEASE=-fPIC -O2 -Wall" "-DCMAKE_CXX_FLAGS_RELEASE=-fPIC -O2 -Wall" -DTBB_TEST=OFF -S /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb -B /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/build/android/armeabi-v7a -G Ninja
+
+-- The CXX compiler identification is Clang 14.0.7
+
+-- Detecting CXX compiler ABI info
+
+-- Detecting CXX compiler ABI info - done
+
+-- Check for working CXX compiler: /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ - skipped
+
+-- Detecting CXX compile features
+
+-- Detecting CXX compile features - done
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Check if compiler accepts -pthread
+
+-- Check if compiler accepts -pthread - yes
+
+-- Found Threads: TRUE  
+
+-- The C compiler identification is Clang 14.0.7
+
+-- Detecting C compiler ABI info
+
+-- Detecting C compiler ABI info - done
+
+-- Check for working C compiler: /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang - skipped
+
+-- Detecting C compile features
+
+-- Detecting C compile features - done
+
+-- HWLOC target HWLOC::hwloc_1_11 doesn't exist. The tbbbind target cannot be created
+-- HWLOC target HWLOC::hwloc_2 doesn't exist. The tbbbind_2_0 target cannot be created
+-- HWLOC target HWLOC::hwloc_2_5 doesn't exist. The tbbbind_2_5 target cannot be created
+
+-- Configuring done (0.8s)
+
+-- Generating done (0.0s)
+
+-- Build files have been written to: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/build/android/armeabi-v7a
+
+$ ninja -j8
+
+[1/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/exception.cpp.o
+
+[2/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/dynamic_link.cpp.o
+
+[3/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/itt_notify.cpp.o
+
+[4/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/allocator.cpp.o
+
+[5/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/concurrent_bounded_queue.cpp.o
+
+[6/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/arena_slot.cpp.o
+
+[7/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/address_waiter.cpp.o
+
+[8/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/governor.cpp.o
+
+[9/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/main.cpp.o
+
+[10/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/misc.cpp.o
+
+[11/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/misc_ex.cpp.o
+
+[12/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/global_control.cpp.o
+
+[13/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/profiling.cpp.o
+
+[14/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/rml_tbb.cpp.o
+
+[15/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/parallel_pipeline.cpp.o
+
+[16/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/private_server.cpp.o
+
+[17/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/observer_proxy.cpp.o
+
+[18/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/market.cpp.o
+
+[19/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/rtm_mutex.cpp.o
+
+[20/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/version.cpp.o
+
+[21/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/semaphore.cpp.o
+
+[22/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/arena.cpp.o
+
+[23/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/rtm_rw_mutex.cpp.o
+
+[24/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/small_object_pool.cpp.o
+
+[25/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/task.cpp.o
+
+[26/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/queuing_rw_mutex.cpp.o
+
+[27/39] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/__/tbb/itt_notify.cpp.o
+
+[28/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/task_group_context.cpp.o
+
+[29/39] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/backref.cpp.o
+
+[30/39] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/tbbmalloc.cpp.o
+
+[31/39] Building CXX object src/tbbmalloc_proxy/CMakeFiles/tbbmalloc_proxy.dir/function_replacement.cpp.o
+
+[32/39] Building CXX object src/tbbmalloc_proxy/CMakeFiles/tbbmalloc_proxy.dir/proxy.cpp.o
+
+[33/39] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/backend.cpp.o
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/backend.cpp:365:9: warning: unused variable 'prev' [-Wunused-variable]
+    int prev = inFlyBlocks.fetch_sub(1);
+        ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/backend.cpp:817:15: warning: use of bitwise '|' with boolean operands [-Wbitwise-instead-of-logical]
+        if (!(scanCoalescQ(/*forceCoalescQDrop=*/true) | extMemPool->softCachesCleanup())) {
+             ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                       ||
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/backend.cpp:817:15: note: cast one or both operands to int to silence this warning
+2 warnings generated.
+
+[34/39] Building CXX object src/tbb/CMakeFiles/tbb.dir/task_dispatcher.cpp.o
+
+[35/39] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/large_objects.cpp.o
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/large_objects.cpp:807:12: warning: use of bitwise '|' with boolean operands [-Wbitwise-instead-of-logical]
+    return largeCache.regularCleanup(extMemPool, currTime, doThreshDecr)
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/large_objects.cpp:807:12: note: cast one or both operands to int to silence this warning
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/large_objects.cpp:823:12: warning: use of bitwise '|' with boolean operands [-Wbitwise-instead-of-logical]
+    return largeCache.cleanAll(extMemPool) | hugeCache.cleanAll(extMemPool);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                           ||
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/large_objects.cpp:823:12: note: cast one or both operands to int to silence this warning
+2 warnings generated.
+
+[36/39] Linking CXX shared library clang_14.0_cxx11_32_release/libtbb.so
+
+[37/39] Building CXX object src/tbbmalloc/CMakeFiles/tbbmalloc.dir/frontend.cpp.o
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/frontend.cpp:604:16: warning: use of bitwise '|' with boolean operands [-Wbitwise-instead-of-logical]
+        return released | lloc.externalCleanup(&memPool->extMemPool) | freeSlabBlocks.externalCleanup();
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                     ||
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/frontend.cpp:604:16: note: cast one or both operands to int to silence this warning
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbbmalloc/frontend.cpp:1866:10: warning: unused variable 'newBlockUnused' [-Wunused-variable]
+    bool newBlockUnused = false;
+         ^
+2 warnings generated.
+
+[38/39] Linking C shared library clang_14.0_cxx11_32_release/libtbbmalloc.so
+
+[39/39] Linking CXX shared library clang_14.0_cxx11_32_release/libtbbmalloc_proxy.so
+
+$ ninja install
+
+[0/1] Install the project...
+
+-- Install configuration: "Release"
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/combinable.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/tbb.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/concurrent_unordered_map.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/memory_pool.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/task.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/concurrent_hash_map.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/enumerable_thread_specific.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/version.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/scalable_allocator.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/task_arena.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/parallel_pipeline.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/concurrent_lru_cache.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/collaborative_call_once.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/parallel_invoke.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/task_group.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/task_scheduler_observer.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/concurrent_priority_queue.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/parallel_reduce.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/cache_aligned_allocator.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/null_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/blocked_range.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/concurrent_set.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/global_control.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/spin_rw_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/blocked_rangeNd.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/flow_graph.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/concurrent_vector.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/flow_graph_abstractions.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/null_rw_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/parallel_for.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/concurrent_map.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/tbbmalloc_proxy.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/concurrent_queue.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/profiling.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/queuing_mutex.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/partitioner.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/tbb_allocator.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/blocked_range3d.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/parallel_scan.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/queuing_rw_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/spin_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/concurrent_unordered_set.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/info.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/blocked_range2d.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/parallel_for_each.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/tick_count.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/tbb/parallel_sort.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/combinable.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/concurrent_unordered_map.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/memory_pool.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/task.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/concurrent_hash_map.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/enumerable_thread_specific.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/version.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/scalable_allocator.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/task_arena.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/parallel_pipeline.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/concurrent_lru_cache.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/collaborative_call_once.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/parallel_invoke.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/task_group.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/task_scheduler_observer.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/concurrent_priority_queue.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/rw_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/parallel_reduce.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/cache_aligned_allocator.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/null_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/blocked_range.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/concurrent_set.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/global_control.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/spin_rw_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_namespace_injection.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_template_helpers.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_indexer_impl.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_rtm_rw_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_types_impl.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_concurrent_unordered_base.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_cache_impl.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_intrusive_list_node.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_pipeline_filters_deduction.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_attach.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_allocator_traits.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_node_impl.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_waitable_atomic.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_trace_impl.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_export.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_scoped_lock.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_config.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_rtm_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_node_handle.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_pipeline_filters.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_string_resource.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_body_impl.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_nodes_deduction.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_concurrent_queue_base.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_assert.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_aggregator.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_containers_helpers.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_range_common.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_item_buffer_impl.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_segment_table.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_machine.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_tagged_buffer_impl.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_concurrent_skip_list.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_node_set_impl.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_small_object_pool.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_task.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_exception.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_aligned_space.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_task_handle.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_hash_compare.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_utils.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_impl.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_flow_graph_join_impl.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/detail/_mutex_common.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/blocked_rangeNd.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/flow_graph.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/concurrent_vector.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/flow_graph_abstractions.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/null_rw_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/parallel_for.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/concurrent_map.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/tbbmalloc_proxy.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/concurrent_queue.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/profiling.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/queuing_mutex.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/partitioner.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/tbb_allocator.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/blocked_range3d.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/parallel_scan.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/queuing_rw_mutex.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/spin_mutex.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/concurrent_unordered_set.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/info.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/blocked_range2d.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/parallel_for_each.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/tick_count.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/include/oneapi/tbb/parallel_sort.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/cmake/TBB/TBBTargets.cmake
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/cmake/TBB/TBBTargets-release.cmake
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/cmake/TBB/TBBConfig.cmake
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/cmake/TBB/TBBConfigVersion.cmake
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/share/doc/TBB/README.md
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/libtbb.so
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/pkgconfig/tbb32.pc
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/libtbbmalloc.so
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/libtbbmalloc_proxy.so
+
+$ /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/libtbb.so
+
+$ /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/libtbbmalloc_proxy.so
+
+$ /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/android/armeabi-v7a/lib/libtbbmalloc.so
+

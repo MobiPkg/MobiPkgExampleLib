@@ -1,0 +1,146 @@
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk
+
+$ cmake -DCMAKE_SYSTEM_NAME=iOS -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMAKE_SYSTEM_PROCESSOR=arm64 -DCMAKE_TOOLCHAIN_FILE=/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/toolchain/arm64/ios.toolchain.cmake -DCMAKE_INSTALL_PREFIX=/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/install/ios/arm64 -DCMAKE_BUILD_TYPE=Release "-DCMAKE_C_FLAGS_RELEASE=-fPIC -O2 -Wall" "-DCMAKE_CXX_FLAGS_RELEASE=-fPIC -O2 -Wall" -DTBB_TEST=OFF -S /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb -B /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/build/ios/arm64 -G Ninja
+
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+
+-- Detecting CXX compiler ABI info
+
+-- Detecting CXX compiler ABI info - done
+
+-- Check for working CXX compiler: /usr/bin/xcrun - skipped
+
+-- Detecting CXX compile features
+
+-- Detecting CXX compile features - done
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+
+-- Found Threads: TRUE  
+
+-- IPO enabled
+
+-- The C compiler identification is AppleClang 11.0.0.11000033
+
+-- Detecting C compiler ABI info
+
+-- Detecting C compiler ABI info - done
+
+-- Check for working C compiler: /usr/bin/xcrun - skipped
+
+-- Detecting C compile features
+
+-- Detecting C compile features - done
+
+-- TBBBind build targets are disabled due to unsupported environment
+
+-- Configuring done (5.6s)
+
+-- Generating done (0.0s)
+
+-- Build files have been written to: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/build/ios/arm64
+
+$ ninja -j8
+
+[1/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/allocator.cpp.o
+
+[2/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/exception.cpp.o
+
+[3/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/dynamic_link.cpp.o
+
+[4/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/itt_notify.cpp.o
+
+[5/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/concurrent_bounded_queue.cpp.o
+
+[6/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/arena_slot.cpp.o
+FAILED: src/tbb/CMakeFiles/tbb.dir/arena_slot.cpp.o 
+/usr/bin/xcrun  -sdk iphoneos clang++ -target arm64-apple-ios  -D__TBB_BUILD -I/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include -fPIC -O2 -Wall -fPIC -O2 -Wall -std=c++11 -flto=thin -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk -fPIC -Wall -Wextra -Werror -Wno-parentheses -Wno-non-virtual-dtor -Wno-dangling-else -D_XOPEN_SOURCE -MD -MT src/tbb/CMakeFiles/tbb.dir/arena_slot.cpp.o -MF src/tbb/CMakeFiles/tbb.dir/arena_slot.cpp.o.d -o src/tbb/CMakeFiles/tbb.dir/arena_slot.cpp.o -c /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/arena_slot.cpp
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/arena_slot.cpp:17:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/arena_slot.h:28:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/mailbox.h:23:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/scheduler_common.h:24:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include/oneapi/tbb/task_group.h:565:53: error: 'uncaught_exceptions' is unavailable: introduced in iOS 10.0
+            bool stack_unwinding_in_progress = std::uncaught_exceptions() > 0;
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/exception:131:63: note: 'uncaught_exceptions' has been explicitly marked unavailable here
+_LIBCPP_FUNC_VIS _LIBCPP_AVAILABILITY_UNCAUGHT_EXCEPTIONS int uncaught_exceptions() _NOEXCEPT;
+                                                              ^
+1 error generated.
+
+[7/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/governor.cpp.o
+FAILED: src/tbb/CMakeFiles/tbb.dir/governor.cpp.o 
+/usr/bin/xcrun  -sdk iphoneos clang++ -target arm64-apple-ios  -D__TBB_BUILD -I/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include -fPIC -O2 -Wall -fPIC -O2 -Wall -std=c++11 -flto=thin -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk -fPIC -Wall -Wextra -Werror -Wno-parentheses -Wno-non-virtual-dtor -Wno-dangling-else -D_XOPEN_SOURCE -MD -MT src/tbb/CMakeFiles/tbb.dir/governor.cpp.o -MF src/tbb/CMakeFiles/tbb.dir/governor.cpp.o.d -o src/tbb/CMakeFiles/tbb.dir/governor.cpp.o -c /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/governor.cpp
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/governor.cpp:19:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/thread_data.h:25:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/scheduler_common.h:24:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include/oneapi/tbb/task_group.h:565:53: error: 'uncaught_exceptions' is unavailable: introduced in iOS 10.0
+            bool stack_unwinding_in_progress = std::uncaught_exceptions() > 0;
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/exception:131:63: note: 'uncaught_exceptions' has been explicitly marked unavailable here
+_LIBCPP_FUNC_VIS _LIBCPP_AVAILABILITY_UNCAUGHT_EXCEPTIONS int uncaught_exceptions() _NOEXCEPT;
+                                                              ^
+1 error generated.
+
+[8/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/arena.cpp.o
+FAILED: src/tbb/CMakeFiles/tbb.dir/arena.cpp.o 
+/usr/bin/xcrun  -sdk iphoneos clang++ -target arm64-apple-ios  -D__TBB_BUILD -I/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include -fPIC -O2 -Wall -fPIC -O2 -Wall -std=c++11 -flto=thin -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk -fPIC -Wall -Wextra -Werror -Wno-parentheses -Wno-non-virtual-dtor -Wno-dangling-else -D_XOPEN_SOURCE -MD -MT src/tbb/CMakeFiles/tbb.dir/arena.cpp.o -MF src/tbb/CMakeFiles/tbb.dir/arena.cpp.o.d -o src/tbb/CMakeFiles/tbb.dir/arena.cpp.o -c /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/arena.cpp
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/arena.cpp:17:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/task_dispatcher.h:24:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/scheduler_common.h:24:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include/oneapi/tbb/task_group.h:565:53: error: 'uncaught_exceptions' is unavailable: introduced in iOS 10.0
+            bool stack_unwinding_in_progress = std::uncaught_exceptions() > 0;
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/exception:131:63: note: 'uncaught_exceptions' has been explicitly marked unavailable here
+_LIBCPP_FUNC_VIS _LIBCPP_AVAILABILITY_UNCAUGHT_EXCEPTIONS int uncaught_exceptions() _NOEXCEPT;
+                                                              ^
+1 error generated.
+
+[9/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/address_waiter.cpp.o
+
+[10/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/main.cpp.o
+FAILED: src/tbb/CMakeFiles/tbb.dir/main.cpp.o 
+/usr/bin/xcrun  -sdk iphoneos clang++ -target arm64-apple-ios  -D__TBB_BUILD -I/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include -fPIC -O2 -Wall -fPIC -O2 -Wall -std=c++11 -flto=thin -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk -fPIC -Wall -Wextra -Werror -Wno-parentheses -Wno-non-virtual-dtor -Wno-dangling-else -D_XOPEN_SOURCE -MD -MT src/tbb/CMakeFiles/tbb.dir/main.cpp.o -MF src/tbb/CMakeFiles/tbb.dir/main.cpp.o.d -o src/tbb/CMakeFiles/tbb.dir/main.cpp.o -c /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/main.cpp
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/main.cpp:22:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/market.h:20:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/scheduler_common.h:24:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include/oneapi/tbb/task_group.h:565:53: error: 'uncaught_exceptions' is unavailable: introduced in iOS 10.0
+            bool stack_unwinding_in_progress = std::uncaught_exceptions() > 0;
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/exception:131:63: note: 'uncaught_exceptions' has been explicitly marked unavailable here
+_LIBCPP_FUNC_VIS _LIBCPP_AVAILABILITY_UNCAUGHT_EXCEPTIONS int uncaught_exceptions() _NOEXCEPT;
+                                                              ^
+1 error generated.
+
+[11/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/global_control.cpp.o
+FAILED: src/tbb/CMakeFiles/tbb.dir/global_control.cpp.o 
+/usr/bin/xcrun  -sdk iphoneos clang++ -target arm64-apple-ios  -D__TBB_BUILD -I/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include -fPIC -O2 -Wall -fPIC -O2 -Wall -std=c++11 -flto=thin -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk -fPIC -Wall -Wextra -Werror -Wno-parentheses -Wno-non-virtual-dtor -Wno-dangling-else -D_XOPEN_SOURCE -MD -MT src/tbb/CMakeFiles/tbb.dir/global_control.cpp.o -MF src/tbb/CMakeFiles/tbb.dir/global_control.cpp.o.d -o src/tbb/CMakeFiles/tbb.dir/global_control.cpp.o -c /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/global_control.cpp
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/global_control.cpp:25:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/market.h:20:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/scheduler_common.h:24:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include/oneapi/tbb/task_group.h:565:53: error: 'uncaught_exceptions' is unavailable: introduced in iOS 10.0
+            bool stack_unwinding_in_progress = std::uncaught_exceptions() > 0;
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/exception:131:63: note: 'uncaught_exceptions' has been explicitly marked unavailable here
+_LIBCPP_FUNC_VIS _LIBCPP_AVAILABILITY_UNCAUGHT_EXCEPTIONS int uncaught_exceptions() _NOEXCEPT;
+                                                              ^
+1 error generated.
+
+[12/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/misc.cpp.o
+
+[13/42] Building CXX object src/tbb/CMakeFiles/tbb.dir/market.cpp.o
+FAILED: src/tbb/CMakeFiles/tbb.dir/market.cpp.o 
+/usr/bin/xcrun  -sdk iphoneos clang++ -target arm64-apple-ios  -D__TBB_BUILD -I/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include -fPIC -O2 -Wall -fPIC -O2 -Wall -std=c++11 -flto=thin -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk -fPIC -Wall -Wextra -Werror -Wno-parentheses -Wno-non-virtual-dtor -Wno-dangling-else -D_XOPEN_SOURCE -MD -MT src/tbb/CMakeFiles/tbb.dir/market.cpp.o -MF src/tbb/CMakeFiles/tbb.dir/market.cpp.o.d -o src/tbb/CMakeFiles/tbb.dir/market.cpp.o -c /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/market.cpp
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/market.cpp:19:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/market.h:20:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/scheduler_common.h:24:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/tbb/source/tbb/src/tbb/../../include/oneapi/tbb/task_group.h:565:53: error: 'uncaught_exceptions' is unavailable: introduced in iOS 10.0
+            bool stack_unwinding_in_progress = std::uncaught_exceptions() > 0;
+                                                    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/exception:131:63: note: 'uncaught_exceptions' has been explicitly marked unavailable here
+_LIBCPP_FUNC_VIS _LIBCPP_AVAILABILITY_UNCAUGHT_EXCEPTIONS int uncaught_exceptions() _NOEXCEPT;
+                                                              ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+

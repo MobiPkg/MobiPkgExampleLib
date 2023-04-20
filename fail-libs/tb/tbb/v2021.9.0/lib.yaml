@@ -1,0 +1,19 @@
+name: tbb
+type: cmake
+homepage: https://github.com/oneapi-src/oneTBB
+description: Rich and complete approach to parallelism in C++
+license-type: Apache-2.0
+source:
+  subpath: .
+  git:
+    url: https://github.com/oneapi-src/oneTBB.git
+    ref: v2021.9.0
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
+
+options:
+  - -DTBB_TEST=OFF
