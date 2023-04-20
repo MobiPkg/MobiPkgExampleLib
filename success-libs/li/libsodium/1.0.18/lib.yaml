@@ -1,0 +1,16 @@
+name: libsodium
+homepage: https://libsodium.org/
+description: NaCl networking and cryptography library
+license-type: ISC
+source:
+  subpath: libsodium-1.0.18
+  http:
+    url: https://download.libsodium.org/libsodium/releases/libsodium-1.0.18.tar.gz
+    type: tar.gz
+    version: 1.0.18
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
