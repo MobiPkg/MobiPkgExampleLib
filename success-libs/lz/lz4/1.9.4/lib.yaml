@@ -1,0 +1,16 @@
+name: lz4
+homepage: https://lz4.github.io/lz4/
+description: Extremely Fast Compression algorithm
+license-type: BSD-2-Clause
+source:
+  subpath: lz4-1.9.4/build/cmake
+  http:
+    url: https://github.com/lz4/lz4/archive/v1.9.4.tar.gz
+    type: tar.gz
+    version: 1.9.4
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
