@@ -1,0 +1,17 @@
+name: libpng
+homepage: http://www.libpng.org/pub/png/libpng.html
+type: autotools
+description: Library for manipulating PNG images
+license-type: libpng-2.0
+source:
+  subpath: libpng-1.6.39
+  http:
+    url: https://downloads.sourceforge.net/project/libpng/libpng16/1.6.39/libpng-1.6.39.tar.xz
+    type: tar.xz
+    version: 1.6.39
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
