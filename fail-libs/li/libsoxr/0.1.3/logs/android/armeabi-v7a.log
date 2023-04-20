@@ -1,0 +1,587 @@
+$ cmake -DANDROID_NATIVE_API_LEVEL=21 -DANDROID_ABI=armeabi-v7a -DCMAKE_TOOLCHAIN_FILE=/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/build/cmake/android.toolchain.cmake -DCMAKE_INSTALL_PREFIX=/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a -DCMAKE_BUILD_TYPE=Release "-DCMAKE_C_FLAGS_RELEASE=-fPIC -O2 -Wall" "-DCMAKE_CXX_FLAGS_RELEASE=-fPIC -O2 -Wall" -S /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source -B /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/build/android/armeabi-v7a -G Ninja
+
+-- The C compiler identification is Clang 14.0.7
+
+-- Detecting C compiler ABI info
+
+-- Detecting C compiler ABI info - done
+
+-- Check for working C compiler: /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang - skipped
+
+-- Detecting C compile features
+
+-- Detecting C compile features - done
+
+CMake Warning (dev) at /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDependentOption.cmake:89 (message):
+  Policy CMP0127 is not set: cmake_dependent_option() supports full Condition
+  Syntax.  Run "cmake --help-policy CMP0127" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  CMakeLists.txt:72 (cmake_dependent_option)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+-- Looking for pow in m
+
+-- Looking for pow in m - found
+
+-- Found OpenMP_C: -fopenmp=libomp (found version "5.0") 
+
+-- Found OpenMP: TRUE (found version "5.0")  
+
+-- Trying SIMD32 C flags: -mfpu=neon-vfpv4 -mcpu=cortex-a7
+
+-- Performing Test DETECT_SIMD32_C_FLAGS
+
+-- Performing Test DETECT_SIMD32_C_FLAGS - Success
+
+-- Found SIMD32: -mfpu=neon-vfpv4 -mcpu=cortex-a7  
+
+-- Could NOT find SIMD64 (missing: SIMD64_C_FLAGS SIMD64_C_FLAGS) 
+
+CMake Warning (dev) at /Applications/CMake.app/Contents/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (AVUTIL)
+  does not match the name of the calling package (LibAVUtil).  This can lead
+  to problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/Modules/FindLibAVUtil.cmake:20 (find_package_handle_standard_args)
+  CMakeLists.txt:138 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+-- Could NOT find AVUTIL (missing: AVUTIL_LIBRARIES AVUTIL_INCLUDE_DIRS) 
+-- Looking for lrint
+
+-- Looking for lrint - found
+
+CMake Warning (dev) at /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CheckIncludeFiles.cmake:121 (message):
+  Policy CMP0075 is not set: Include file check macros honor
+  CMAKE_REQUIRED_LIBRARIES.  Run "cmake --help-policy CMP0075" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  CMAKE_REQUIRED_LIBRARIES is set to:
+
+    m;
+
+  For compatibility with CMake 3.11 and below this check is ignoring it.
+Call Stack (most recent call first):
+  CMakeLists.txt:146 (check_include_files)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+-- Looking for include file fenv.h
+
+-- Looking for include file fenv.h - found
+
+-- Looking for include file stdbool.h
+
+-- Looking for include file stdbool.h - found
+
+-- Looking for include file stdint.h
+
+-- Looking for include file stdint.h - found
+
+-- Configuring done (1.6s)
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/data-io.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/dbesi0.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g64.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr32.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g32.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr64.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/vr32.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr32s.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/pffft32s.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util32s.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:103 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/soxr-lsr.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/examples/3-options-input-fn.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/examples/1a-lsr.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+-- Generating done (0.1s)
+
+-- Build files have been written to: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/build/android/armeabi-v7a
+
+$ ninja -j8
+
+[1/28] Building C object src/CMakeFiles/soxr.dir/dbesi0.c.o
+
+[2/28] Building C object src/CMakeFiles/soxr.dir/filter.c.o
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c:28:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g_cache.h:31:8: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+static bool UPDATE_FFT_CACHE(int len)
+       ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c:28:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g_cache.h:59:33: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+static void DONE_WITH_FFT_CACHE(bool is_writer)
+                                ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c:28:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g_cache.h:68:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool is_writer = UPDATE_FFT_CACHE(len);
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c:28:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g_cache.h:75:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool is_writer = UPDATE_FFT_CACHE(len);
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c:45:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g_cache.h:31:8: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+static bool UPDATE_FFT_CACHE(int len)
+       ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c:45:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g_cache.h:59:33: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+static void DONE_WITH_FFT_CACHE(bool is_writer)
+                                ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c:45:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g_cache.h:68:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool is_writer = UPDATE_FFT_CACHE(len);
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c:45:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g_cache.h:75:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool is_writer = UPDATE_FFT_CACHE(len);
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+8 warnings generated.
+
+[3/28] Building C object src/CMakeFiles/soxr.dir/soxr.c.o
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/soxr.c:246:10: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  static bool cpu_has_simd32(void)
+         ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/soxr.c:262:10: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  static bool should_use_simd32(void)
+         ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/soxr.c:634:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool separated = !!(p->io_spec.itype & SOXR_SPLIT);
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/soxr.c:656:82: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+static size_t soxr_output_1ch(soxr_t p, unsigned i, soxr_buf_t dest, size_t len, bool separated)
+                                                                                 ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/soxr.c:676:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool separated = !!(p->io_spec.otype & SOXR_SPLIT);
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/soxr.c:704:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool was_flushing;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/soxr.c:759:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool flush_requested = false;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+7 warnings generated.
+
+[4/28] Building C object src/CMakeFiles/soxr.dir/cr32.c.o
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr32.c:8:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr-core.c:15:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.h:104:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool       is_input;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr32.c:8:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr-core.c:15:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.h:116:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool       use_hi_prec_clock;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+2 warnings generated.
+
+[5/28] Building C object src/CMakeFiles/soxr.dir/cr.c.o
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:18:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.h:104:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool       is_input;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:18:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.h:116:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool       use_hi_prec_clock;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:192:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool f_domain_m = abs(3-M) == 1 && Fs <= 1;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:283:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool const maintain_3dB_pt = !!(q_spec->flags & SOXR_MAINTAIN_3DB_PT);
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:290:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool upsample=false, rational=false, iOpt=!(r_spec->flags&SOXR_NOSMALLINTOPT);
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:291:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool lq_bits= (q_spec->flags & SOXR_PROMOTE_TO_LQ)? bits <= 16 : bits == 16;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:292:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool lq_Fp0 = (q_spec->flags & SOXR_PROMOTE_TO_LQ)? Fp0<=lq_bw0 : Fp0==lq_bw0;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:498:8: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+static bool stage_process(stage_t * stage, bool flushing)
+       ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:498:44: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+static bool stage_process(stage_t * stage, bool flushing)
+                                           ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:501:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool done = false;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c:520:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool done = false;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+11 warnings generated.
+
+[6/28] Building C object src/CMakeFiles/soxr.dir/cr64.c.o
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr64.c:8:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr-core.c:15:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.h:104:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool       is_input;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr64.c:8:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr-core.c:15:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.h:116:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool       use_hi_prec_clock;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+2 warnings generated.
+
+[7/28] Building C object src/CMakeFiles/soxr.dir/util32s.c.o
+
+[8/28] Building C object src/CMakeFiles/soxr.dir/fft4g32.c.o
+
+[9/28] Building C object src/CMakeFiles/soxr-lsr.dir/soxr-lsr.c.o
+
+[10/28] Building C object src/CMakeFiles/soxr.dir/fft4g64.c.o
+
+[11/28] Building C object tests/CMakeFiles/1-delay-clear.dir/1-delay-clear.c.o
+
+[12/28] Building C object tests/CMakeFiles/vector-gen.dir/vector-gen.c.o
+
+[13/28] Building C object tests/CMakeFiles/vector-cmp.dir/vector-cmp.c.o
+
+[14/28] Building C object tests/CMakeFiles/throughput.dir/throughput.c.o
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/tests/throughput.c:120:14: warning: variable 'itotal' set but not used [-Wunused-but-set-variable]
+      size_t itotal = 0, ototal = 0;
+             ^
+1 warning generated.
+
+[15/28] Building C object examples/CMakeFiles/3-options-input-fn.dir/3-options-input-fn.c.o
+
+[16/28] Building C object examples/CMakeFiles/1a-lsr.dir/1a-lsr.c.o
+
+[17/28] Building C object src/CMakeFiles/soxr.dir/vr32.c.o
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/vr32.c:202:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool is_d; /* true: downsampling at x2 rate; false: upsampling at 1x rate. */
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/vr32.c:338:8: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+static bool set_step_step(stream_t * p, double io_ratio, int slew_len)
+       ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/vr32.c:377:8: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+static bool do_input_stage(rate_t * p, int stage_num, int sign, int min_stage_num)
+       ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/vr32.c:394:5: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+    bool should_be_fast = p->stage_inc;
+    ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+4 warnings generated.
+
+[18/28] Building C object src/CMakeFiles/soxr.dir/pffft32s.c.o
+
+[19/28] Building C object src/CMakeFiles/soxr.dir/data-io.c.o
+
+[20/28] Building C object src/CMakeFiles/soxr.dir/cr32s.c.o
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr32s.c:8:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr-core.c:15:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.h:104:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool       is_input;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr32s.c:8:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr-core.c:15:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.h:116:3: warning: '_Bool' is a C99 extension [-Wc99-extensions]
+  bool       use_hi_prec_clock;
+  ^
+/Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/14.0.7/include/stdbool.h:15:14: note: expanded from macro 'bool'
+#define bool _Bool
+             ^
+2 warnings generated.
+
+[21/28] Linking C shared library src/libsoxr.so
+
+[22/28] Linking C shared library src/libsoxr-lsr.so
+
+[23/28] Linking C executable tests/1-delay-clear
+[24/28] Linking C executable tests/throughput
+[25/28] Linking C executable examples/3-options-input-fn
+
+[26/28] Linking C executable tests/vector-cmp
+[27/28] Linking C executable tests/vector-gen
+
+[28/28] Linking C executable examples/1a-lsr
+
+$ ninja install
+
+[0/1] Install the project...
+
+-- Install configuration: "Release"
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/README
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/LICENCE
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/NEWS
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/lib/pkgconfig/soxr.pc
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/lib/pkgconfig/soxr-lsr.pc
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/lib/libsoxr.so
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/include/soxr.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/lib/libsoxr-lsr.so
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/include/soxr-lsr.h
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/examples/1-single-block.c
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/examples/1a-lsr.c
+
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/examples/2-stream.C
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/examples/3-options-input-fn.c
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/examples/4-split-channels.c
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/examples/5-variable-rate.c
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/examples/examples-common.h
+-- Installing: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/share/doc/libsoxr/examples/README
+
+$ /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/lib/libsoxr-lsr.so
+
+$ /Volumes/Samsung-T5/sdk/android/ndk/25.2.9519653/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-strip /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/android/armeabi-v7a/lib/libsoxr.so
+

@@ -1,0 +1,329 @@
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk
+
+$ cmake -DCMAKE_SYSTEM_NAME=iOS -DCMAKE_OSX_ARCHITECTURES=arm64 -DCMAKE_SYSTEM_PROCESSOR=arm64 -DCMAKE_TOOLCHAIN_FILE=/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/toolchain/arm64/ios.toolchain.cmake -DCMAKE_INSTALL_PREFIX=/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/install/ios/arm64 -DCMAKE_BUILD_TYPE=Release "-DCMAKE_C_FLAGS_RELEASE=-fPIC -O2 -Wall" "-DCMAKE_CXX_FLAGS_RELEASE=-fPIC -O2 -Wall" -S /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source -B /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/build/ios/arm64 -G Ninja
+
+-- The C compiler identification is AppleClang 11.0.0.11000033
+
+-- Detecting C compiler ABI info
+
+-- Detecting C compiler ABI info - done
+
+-- Check for working C compiler: /usr/bin/xcrun - skipped
+
+-- Detecting C compile features
+
+-- Detecting C compile features - done
+
+CMake Warning (dev) at /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CMakeDependentOption.cmake:89 (message):
+  Policy CMP0127 is not set: cmake_dependent_option() supports full Condition
+  Syntax.  Run "cmake --help-policy CMP0127" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  CMakeLists.txt:72 (cmake_dependent_option)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+-- Looking for pow in m
+
+-- Looking for pow in m - found
+
+-- Could NOT find OpenMP_C (missing: OpenMP_C_FLAGS OpenMP_C_LIB_NAMES) 
+
+-- Could NOT find OpenMP (missing: OpenMP_C_FOUND) 
+
+-- Trying SIMD32 C flags: -mfpu=neon-vfpv4 -mcpu=cortex-a7
+
+-- Performing Test DETECT_SIMD32_C_FLAGS
+
+-- Performing Test DETECT_SIMD32_C_FLAGS - Failed
+-- Trying SIMD32 C flags: -mfpu=neon       -mfloat-abi=hard
+
+-- Performing Test DETECT_SIMD32_C_FLAGS
+
+-- Performing Test DETECT_SIMD32_C_FLAGS - Success
+
+-- Found SIMD32: -mfpu=neon       -mfloat-abi=hard  
+
+-- Could NOT find SIMD64 (missing: SIMD64_C_FLAGS SIMD64_C_FLAGS) 
+
+CMake Warning (dev) at /Applications/CMake.app/Contents/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (AVUTIL)
+  does not match the name of the calling package (LibAVUtil).  This can lead
+  to problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/Modules/FindLibAVUtil.cmake:20 (find_package_handle_standard_args)
+  CMakeLists.txt:138 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+-- Could NOT find AVUTIL (missing: AVUTIL_LIBRARIES AVUTIL_INCLUDE_DIRS) 
+
+-- Looking for lrint
+
+-- Looking for lrint - found
+
+CMake Warning (dev) at /Applications/CMake.app/Contents/share/cmake-3.26/Modules/CheckIncludeFiles.cmake:121 (message):
+  Policy CMP0075 is not set: Include file check macros honor
+  CMAKE_REQUIRED_LIBRARIES.  Run "cmake --help-policy CMP0075" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  CMAKE_REQUIRED_LIBRARIES is set to:
+
+    m;
+
+  For compatibility with CMake 3.11 and below this check is ignoring it.
+Call Stack (most recent call first):
+  CMakeLists.txt:146 (check_include_files)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+-- Looking for include file fenv.h
+
+-- Looking for include file fenv.h - found
+
+-- Looking for include file stdbool.h
+
+-- Looking for include file stdbool.h - found
+
+-- Looking for include file stdint.h
+
+-- Looking for include file stdint.h - found
+
+-- Configuring done (4.9s)
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/data-io.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/dbesi0.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/filter.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g64.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr32.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/fft4g32.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr64.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/vr32.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/cr32s.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/pffft32s.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at src/CMakeLists.txt:79 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util32s.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+CMake Warning (dev) at src/CMakeLists.txt:103 (add_library):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/soxr-lsr.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+CMake Warning (dev) at examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/examples/3-options-input-fn.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+CMake Warning (dev) at examples/CMakeLists.txt:24 (add_executable):
+  Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+  "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  File:
+
+    /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/examples/1a-lsr.c
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+
+-- Generating done (0.0s)
+
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_CXX_FLAGS_RELEASE
+
+
+
+-- Build files have been written to: /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/build/ios/arm64
+
+$ ninja -j8
+
+[1/30] Building C object src/CMakeFiles/soxr.dir/dbesi0.c.o
+
+[2/30] Building C object src/CMakeFiles/soxr.dir/soxr.c.o
+
+[3/30] Building C object src/CMakeFiles/soxr.dir/filter.c.o
+
+[4/30] Building C object src/CMakeFiles/soxr.dir/cr.c.o
+
+[5/30] Building C object src/CMakeFiles/soxr.dir/cr32.c.o
+
+[6/30] Building C object src/CMakeFiles/soxr.dir/util32s.c.o
+FAILED: src/CMakeFiles/soxr.dir/util32s.c.o 
+/usr/bin/xcrun  -sdk iphoneos clang -target arm64-apple-ios  -DSOXR_LIB -Dsoxr_EXPORTS -I/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/build/ios/arm64 -I/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src -fPIC -O2 -Wall -fPIC -O2 -Wall -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk -fPIC -mfpu=neon       -mfloat-abi=hard -MD -MT src/CMakeFiles/soxr.dir/util32s.c.o -MF src/CMakeFiles/soxr.dir/util32s.c.o.d -o src/CMakeFiles/soxr.dir/util32s.c.o -c /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util32s.c
+clang: warning: argument unused during compilation: '-mfpu=neon' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-mfloat-abi=hard' [-Wunused-command-line-argument]
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util32s.c:8:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util-simd.c:43:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/pffft.c:185:6: warning: "building with simd disabled !\n"; [-W#warnings]
+#    warning "building with simd disabled !\n";
+     ^
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util32s.c:8:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util-simd.c:58:5: error: implicit declaration of function 'UNINTERLEAVE2' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    UNINTERLEAVE2(a1r, a1i, a1r, a1i);
+    ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util-simd.c:61:5: error: implicit declaration of function 'INTERLEAVE2' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    INTERLEAVE2(a1r, a1i, a1r, a1i);
+    ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util-simd.c:61:5: note: did you mean 'UNINTERLEAVE2'?
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util-simd.c:58:5: note: 'UNINTERLEAVE2' declared here
+    UNINTERLEAVE2(a1r, a1i, a1r, a1i);
+    ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util-simd.c:81:5: error: implicit declaration of function 'UNINTERLEAVE2' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    UNINTERLEAVE2(a1r, a1i, a1r, a1i);
+    ^
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/util-simd.c:84:5: error: implicit declaration of function 'INTERLEAVE2' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+    INTERLEAVE2(a1r, a1i, a1r, a1i);
+    ^
+1 warning and 4 errors generated.
+
+[7/30] Building C object src/CMakeFiles/soxr.dir/cr32s.c.o
+clang: warning: argument unused during compilation: '-mfpu=neon' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-mfloat-abi=hard' [-Wunused-command-line-argument]
+
+[8/30] Building C object src/CMakeFiles/soxr.dir/cr64.c.o
+
+[9/30] Building C object src/CMakeFiles/soxr.dir/fft4g64.c.o
+
+[10/30] Building C object src/CMakeFiles/soxr.dir/fft4g32.c.o
+
+[11/30] Building C object src/CMakeFiles/soxr.dir/pffft32s.c.o
+clang: warning: argument unused during compilation: '-mfpu=neon' [-Wunused-command-line-argument]
+clang: warning: argument unused during compilation: '-mfloat-abi=hard' [-Wunused-command-line-argument]
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/pffft32s.c:5:
+In file included from /Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/pffft-wrap.c:27:
+/Volumes/Samsung-T5/code/MobiPkg/Compile/logs/libs/libsoxr/source/libsoxr/soxr-0.1.3-Source/src/pffft.c:185:6: warning: "building with simd disabled !\n"; [-W#warnings]
+#    warning "building with simd disabled !\n";
+     ^
+1 warning generated.
+
+[12/30] Building C object src/CMakeFiles/soxr.dir/vr32.c.o
+
+[13/30] Building C object src/CMakeFiles/soxr.dir/data-io.c.o
+ninja: build stopped: subcommand failed.
+
