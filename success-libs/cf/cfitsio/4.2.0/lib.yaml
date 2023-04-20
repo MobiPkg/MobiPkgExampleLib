@@ -1,0 +1,16 @@
+name: cfitsio
+homepage: https://heasarc.gsfc.nasa.gov/docs/software/fitsio/fitsio.html
+description: C access to FITS data files with optional Fortran wrappers
+license-type: CFITSIO
+source:
+  subpath: cfitsio-4.2.0
+  http:
+    url: https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.2.0.tar.gz
+    type: tar.gz
+    version: 4.2.0
+license: License.txt
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
