@@ -1,0 +1,274 @@
+$ cmake -DANDROID_NATIVE_API_LEVEL=21 -DANDROID_ABI=armeabi-v7a -DCMAKE_TOOLCHAIN_FILE=/Users/jinglongcai/sdk/ndk/25.0.8775105/build/cmake/android.toolchain.cmake -DCMAKE_INSTALL_PREFIX=/Users/jinglongcai/code/MobiPkg/compile/logs/libs/libomp/install/android/armeabi-v7a -DCMAKE_BUILD_TYPE=Release "-DCMAKE_C_FLAGS_RELEASE=-I/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -I/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/arm-linux-androideabi -L/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/21 -fPIC -O2 -Wall" "-DCMAKE_CXX_FLAGS_RELEASE=-I/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include -I/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/arm-linux-androideabi -L/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/21 -fPIC -O2 -Wall" -DCMAKE_EXE_LINKER_FLAGS_RELEASE=-L/Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/21 -S /Users/jinglongcai/code/MobiPkg/compile/logs/libs/libomp/source/libomp/openmp-16.0.2.src -B /Users/jinglongcai/code/MobiPkg/compile/logs/libs/libomp/build/android/armeabi-v7a -G Ninja
+
+-- The C compiler identification is Clang 14.0.6
+
+-- The CXX compiler identification is Clang 14.0.6
+
+-- Detecting C compiler ABI info
+
+-- Detecting C compiler ABI info - done
+
+-- Check for working C compiler: /Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang - skipped
+
+-- Detecting C compile features
+
+-- Detecting C compile features - done
+
+-- Detecting CXX compiler ABI info
+
+-- Detecting CXX compiler ABI info - done
+
+-- Check for working CXX compiler: /Users/jinglongcai/sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ - skipped
+
+-- Detecting CXX compile features
+
+-- Detecting CXX compile features - done
+
+-- Performing Test OPENMP_HAVE_ONEAPI_COMPILER
+
+-- Performing Test OPENMP_HAVE_ONEAPI_COMPILER - Failed
+
+-- Performing Test OPENMP_HAVE_WALL_FLAG
+
+-- Performing Test OPENMP_HAVE_WALL_FLAG - Success
+
+-- Performing Test OPENMP_HAVE_WERROR_FLAG
+
+-- Performing Test OPENMP_HAVE_WERROR_FLAG - Success
+
+-- Performing Test OPENMP_HAVE_WCAST_QUAL_FLAG
+
+-- Performing Test OPENMP_HAVE_WCAST_QUAL_FLAG - Success
+
+-- Performing Test OPENMP_HAVE_WFORMAT_PEDANTIC_FLAG
+
+-- Performing Test OPENMP_HAVE_WFORMAT_PEDANTIC_FLAG - Success
+
+-- Performing Test OPENMP_HAVE_WIMPLICIT_FALLTHROUGH_FLAG
+
+-- Performing Test OPENMP_HAVE_WIMPLICIT_FALLTHROUGH_FLAG - Success
+
+-- Performing Test OPENMP_HAVE_WSIGN_COMPARE_FLAG
+
+-- Performing Test OPENMP_HAVE_WSIGN_COMPARE_FLAG - Success
+
+-- Performing Test OPENMP_HAVE_WENUM_CONSTEXPR_CONVERSION_FLAG
+
+-- Performing Test OPENMP_HAVE_WENUM_CONSTEXPR_CONVERSION_FLAG - Failed
+
+-- Performing Test OPENMP_HAVE_WEXTRA_FLAG
+
+-- Performing Test OPENMP_HAVE_WEXTRA_FLAG - Success
+
+-- Performing Test OPENMP_HAVE_WPEDANTIC_FLAG
+
+-- Performing Test OPENMP_HAVE_WPEDANTIC_FLAG - Success
+
+-- Performing Test OPENMP_HAVE_WMAYBE_UNINITIALIZED_FLAG
+
+-- Performing Test OPENMP_HAVE_WMAYBE_UNINITIALIZED_FLAG - Failed
+
+-- Performing Test OPENMP_HAVE_STD_CPP17_FLAG
+
+-- Performing Test OPENMP_HAVE_STD_CPP17_FLAG - Success
+
+-- Found Python3: /usr/local/Frameworks/Python.framework/Versions/3.11/bin/python3.11 (found version "3.11.2") found components: Interpreter 
+
+-- Cannot find llvm-lit.
+-- Please put llvm-lit in your PATH, set OPENMP_LLVM_LIT_EXECUTABLE to its full path, or point OPENMP_LLVM_TOOLS_DIR to its directory.
+
+CMake Warning at cmake/OpenMPTesting.cmake:22 (message):
+  The check targets will not be available!
+Call Stack (most recent call first):
+  cmake/OpenMPTesting.cmake:51 (find_standalone_test_dependencies)
+  CMakeLists.txt:66 (include)
+
+
+
+-- Could not detect test compilers.
+
+CMake Warning at cmake/OpenMPTesting.cmake:131 (message):
+  The check targets will not be available!
+Call Stack (most recent call first):
+  CMakeLists.txt:66 (include)
+
+
+
+-- Performing Test LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG
+
+-- Performing Test LIBOMP_HAVE_FNO_EXCEPTIONS_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_FNO_RTTI_FLAG
+
+-- Performing Test LIBOMP_HAVE_FNO_RTTI_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_WCLASS_MEMACCESS_FLAG
+
+-- Performing Test LIBOMP_HAVE_WCLASS_MEMACCESS_FLAG - Failed
+
+-- Performing Test LIBOMP_HAVE_WCOVERED_SWITCH_DEFAULT_FLAG
+
+-- Performing Test LIBOMP_HAVE_WCOVERED_SWITCH_DEFAULT_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_WFRAME_ADDRESS_FLAG
+
+-- Performing Test LIBOMP_HAVE_WFRAME_ADDRESS_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_WSTRICT_ALIASING_FLAG
+
+-- Performing Test LIBOMP_HAVE_WSTRICT_ALIASING_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_WSTRINGOP_OVERFLOW_FLAG
+
+-- Performing Test LIBOMP_HAVE_WSTRINGOP_OVERFLOW_FLAG - Failed
+
+-- Performing Test LIBOMP_HAVE_WSTRINGOP_TRUNCATION_FLAG
+
+-- Performing Test LIBOMP_HAVE_WSTRINGOP_TRUNCATION_FLAG - Failed
+
+-- Performing Test LIBOMP_HAVE_WSWITCH_FLAG
+
+-- Performing Test LIBOMP_HAVE_WSWITCH_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_WUNINITIALIZED_FLAG
+
+-- Performing Test LIBOMP_HAVE_WUNINITIALIZED_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_WRETURN_TYPE_C_LINKAGE_FLAG
+
+-- Performing Test LIBOMP_HAVE_WRETURN_TYPE_C_LINKAGE_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_WCAST_QUAL_FLAG
+
+-- Performing Test LIBOMP_HAVE_WCAST_QUAL_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_WINT_TO_VOID_POINTER_CAST_FLAG
+
+-- Performing Test LIBOMP_HAVE_WINT_TO_VOID_POINTER_CAST_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_MSSE2_FLAG
+
+-- Performing Test LIBOMP_HAVE_MSSE2_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_FTLS_MODEL_FLAG
+
+-- Performing Test LIBOMP_HAVE_FTLS_MODEL_FLAG - Success
+
+-- Performing Test LIBOMP_HAVE_MMIC_FLAG
+
+-- Performing Test LIBOMP_HAVE_MMIC_FLAG - Failed
+
+-- Performing Test LIBOMP_HAVE_M32_FLAG
+
+-- Performing Test LIBOMP_HAVE_M32_FLAG - Success
+
+-- Looking for shm_open
+
+-- Looking for shm_open - not found
+
+-- Looking for shm_open
+
+-- Looking for shm_open - not found
+
+-- Looking for xmmintrin.h
+
+-- Looking for xmmintrin.h - not found
+
+-- Performing Test LIBOMP_HAVE__MM_MALLOC
+
+-- Performing Test LIBOMP_HAVE__MM_MALLOC - Failed
+
+-- Looking for aligned_alloc
+
+-- Looking for aligned_alloc - not found
+
+-- Looking for posix_memalign
+
+-- Looking for posix_memalign - found
+
+-- Looking for _aligned_malloc
+
+-- Looking for _aligned_malloc - not found
+
+-- Performing Test LIBOMP_HAVE_X_FLAG
+
+-- Performing Test LIBOMP_HAVE_X_FLAG - Failed
+
+-- Performing Test LIBOMP_HAVE_AS_NEEDED_FLAG
+
+-- Performing Test LIBOMP_HAVE_AS_NEEDED_FLAG - Failed
+
+-- Performing Test LIBOMP_HAVE_VERSION_SCRIPT_FLAG
+
+-- Performing Test LIBOMP_HAVE_VERSION_SCRIPT_FLAG - Failed
+
+-- Performing Test LIBOMP_HAVE_STATIC_LIBGCC_FLAG
+
+-- Performing Test LIBOMP_HAVE_STATIC_LIBGCC_FLAG - Failed
+
+-- Performing Test LIBOMP_HAVE_Z_NOEXECSTACK_FLAG
+
+-- Performing Test LIBOMP_HAVE_Z_NOEXECSTACK_FLAG - Failed
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+
+-- Looking for pthread_create in pthreads
+
+-- Looking for pthread_create in pthreads - not found
+
+-- Looking for pthread_create in pthread
+
+-- Looking for pthread_create in pthread - not found
+-- Check if compiler accepts -pthread
+
+-- Check if compiler accepts -pthread - yes
+
+-- Found Threads: TRUE  
+
+-- Found Perl: /usr/local/bin/perl (found version "5.32.0") 
+
+-- Performing Test LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS
+
+-- Performing Test LIBOMP_HAVE___BUILTIN_FRAME_ADDRESS - Success
+
+-- Performing Test LIBOMP_HAVE_WEAK_ATTRIBUTE
+
+-- Performing Test LIBOMP_HAVE_WEAK_ATTRIBUTE - Success
+
+-- Performing Test LIBOMP_HAVE_PSAPI
+
+-- Performing Test LIBOMP_HAVE_PSAPI - Failed
+
+-- LIBOMP: Operating System     -- Android
+-- LIBOMP: Target Architecture  -- arm
+-- LIBOMP: Build Type           -- Release
+-- LIBOMP: Library Kind         -- SHARED
+-- LIBOMP: Library Type         -- normal
+-- LIBOMP: Fortran Modules      -- FALSE
+-- LIBOMP: Build                -- 20140926
+-- LIBOMP: Use Stats-gathering  -- FALSE
+-- LIBOMP: Use Debugger-support -- FALSE
+-- LIBOMP: Use ITT notify       -- TRUE
+
+-- LIBOMP: Use OMPT-support     -- FALSE
+-- LIBOMP: Use OMPD-support     -- FALSE
+-- LIBOMP: Use Adaptive locks   -- FALSE
+-- LIBOMP: Use quad precision   -- FALSE
+-- LIBOMP: Use Hwloc library    -- FALSE
+
+CMake Error at runtime/src/CMakeLists.txt:11 (include):
+  include could not find requested file:
+
+    ExtendPath
+
+
+
+CMake Error at runtime/src/CMakeLists.txt:383 (extend_path):
+  Unknown CMake command "extend_path".
+
+
+
+-- Configuring incomplete, errors occurred!
+
