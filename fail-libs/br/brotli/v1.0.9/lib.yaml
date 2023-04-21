@@ -1,0 +1,19 @@
+name: brotli
+type: cmake
+homepage: https://github.com/google/brotli
+description: Generic-purpose lossless compression algorithm by Google
+license-type: MIT
+source:
+  subpath: .
+  git:
+    url: https://github.com/google/brotli.git
+    ref: v1.0.9
+license: LICENSE
+flags:
+  c: -fPIC -O2 -Wall
+  cxx: -fPIC -O2 -Wall
+  cpp: ""
+  ld: ""
+
+precompile:
+  - ./configure-cmake
